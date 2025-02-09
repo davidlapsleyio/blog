@@ -1,5 +1,6 @@
 ---
-title: davidlapsley.io
+layout: default
+title: Home
 ---
 
 # Welcome!
