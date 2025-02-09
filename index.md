@@ -8,9 +8,9 @@ Hi, I'm Dave! With decades of experience in engineering management and software 
 
 # Featured Topics
 
-• Engineering Management: Best practices, leadership strategies, and team dynamics.
-• Software Development: Coding trends, best practices, and development methodologies.
-• Artificial Intelligence: Innovations, ethics, and applications transforming industries.
-• Agentic Systems: Exploring autonomous systems and their growing impact on our world.
+* Engineering Management: Best practices, leadership strategies, and team dynamics.
+* Software Development: Coding trends, best practices, and development methodologies.
+* Artificial Intelligence: Innovations, ethics, and applications transforming industries.
+* Agentic Systems: Exploring autonomous systems and their growing impact on our world.
 
 Thank you for visiting, and I look forward to sharing my journey and insights with you!
