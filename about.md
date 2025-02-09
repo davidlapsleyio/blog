@@ -1,7 +1,9 @@
 ---
-id: about
+layout: default
+title: About
+permalink: /about/
 ---
 
-# About me!
+# About
 
 Some notes on me.
