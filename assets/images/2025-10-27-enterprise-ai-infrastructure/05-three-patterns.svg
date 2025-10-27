@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+      .light-orange-bg { fill: #FCF0EB; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .pattern-title { font: bold 22px sans-serif; fill: #ffffff; }
+      .section-header { font: bold 18px sans-serif; fill: #2C3E50; }
+      .desc-text { font: 16px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Three Infrastructure Patterns That Work</text>
+
+  <!-- Pattern #1: Hybrid Cloud -->
+  <rect x="50" y="90" width="420" height="750" class="light-blue-bg card-border" rx="8"/>
+  <rect x="50" y="90" width="420" height="60" class="primary-blue" rx="8"/>
+  <text x="260" y="130" text-anchor="middle" class="pattern-title">Pattern #1: Hybrid Cloud</text>
+
+  <text x="260" y="190" text-anchor="middle" class="section-header">The Strategy</text>
+  <text x="70" y="225" class="desc-text">☁️ Cloud: Training (burst capacity)</text>
+  <text x="70" y="255" class="desc-text">🏢 On-Prem: Inference (compliance)</text>
+
+  <text x="260" y="310" text-anchor="middle" class="section-header">Example: Financial Services</text>
+  <text x="70" y="345" class="desc-text">Fraud detection on millions of</text>
+  <text x="70" y="370" class="desc-text">transactions per day</text>
+
+  <rect x="70" y="400" width="380" height="180" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="260" y="430" text-anchor="middle" style="font: bold 16px sans-serif; fill: #2C5F8D;">Cloud Training:</text>
+  <text x="85" y="460" style="font: 14px sans-serif; fill: #2C3E50;">• Weekly retraining: 32 GPUs × 48h</text>
+  <text x="85" y="490" style="font: 14px sans-serif; fill: #2C3E50;">• Cost: ~$12K per run</text>
+  <text x="85" y="520" style="font: 14px sans-serif; fill: #2C3E50;">• Shut down when not training</text>
+  <text x="85" y="550" style="font: 14px sans-serif; fill: #2C3E50;">• No idle costs</text>
+
+  <rect x="70" y="600" width="380" height="180" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="260" y="630" text-anchor="middle" style="font: bold 16px sans-serif; fill: #2C5F8D;">On-Prem Inference:</text>
+  <text x="85" y="660" style="font: 14px sans-serif; fill: #2C3E50;">• 8 dedicated GPUs (owned)</text>
+  <text x="85" y="690" style="font: 14px sans-serif; fill: #2C3E50;">• 5M transactions/day</text>
+  <text x="85" y="720" style="font: 14px sans-serif; fill: #2C3E50;">• &lt;50ms latency (regulatory)</text>
+  <text x="85" y="750" style="font: 14px sans-serif; fill: #2C3E50;">• SOX compliance ✓</text>
+
+  <text x="260" y="810" text-anchor="middle" style="font: bold 18px sans-serif; fill: #2C5F8D;">Compliance + Cost Control</text>
+
+  <!-- Pattern #2: GPU Pooling -->
+  <rect x="490" y="90" width="420" height="750" class="light-teal-bg card-border" rx="8"/>
+  <rect x="490" y="90" width="420" height="60" class="secondary-teal" rx="8"/>
+  <text x="700" y="130" text-anchor="middle" class="pattern-title">Pattern #2: GPU Pooling</text>
+
+  <text x="700" y="190" text-anchor="middle" class="section-header">The Problem</text>
+  <text x="510" y="225" class="desc-text">Dedicated GPUs per team</text>
+  <text x="510" y="255" class="desc-text">Result: 80% idle capacity</text>
+
+  <text x="700" y="310" text-anchor="middle" class="section-header">The Solution</text>
+  <text x="510" y="345" class="desc-text">Shared GPU pool with</text>
+  <text x="510" y="370" class="desc-text">Multi-Instance GPU (MIG)</text>
+
+  <rect x="510" y="400" width="380" height="160" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="700" y="430" text-anchor="middle" style="font: bold 16px sans-serif; fill: #287D7D;">Before:</text>
+  <text x="525" y="460" style="font: 14px sans-serif; fill: #2C3E50;">• Each team: dedicated 4 GPUs</text>
+  <text x="525" y="490" style="font: 14px sans-serif; fill: #2C3E50;">• Utilization: 20%</text>
+  <text x="525" y="520" style="font: 14px sans-serif; fill: #2C3E50;">• 80% waste, $285K/month</text>
+
+  <rect x="510" y="580" width="380" height="160" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="700" y="610" text-anchor="middle" style="font: bold 16px sans-serif; fill: #287D7D;">After (with MIG):</text>
+  <text x="525" y="640" style="font: 14px sans-serif; fill: #2C3E50;">• Shared GPU pool</text>
+  <text x="525" y="670" style="font: 14px sans-serif; fill: #2C3E50;">• Utilization: 70-75%</text>
+  <text x="525" y="700" style="font: 14px sans-serif; fill: #2C3E50;">• Same hardware, 3.5x workloads</text>
+  <text x="525" y="730" style="font: bold 16px sans-serif; fill: #52A675;">✓ Saves $183K/month</text>
+
+  <text x="700" y="810" text-anchor="middle" style="font: bold 18px sans-serif; fill: #287D7D;">50-70% Cost Reduction</text>
+
+  <!-- Pattern #3: Model Optimization -->
+  <rect x="930" y="90" width="420" height="750" class="light-orange-bg card-border" rx="8"/>
+  <rect x="930" y="90" width="420" height="60" class="accent-orange" rx="8"/>
+  <text x="1140" y="130" text-anchor="middle" class="pattern-title">Pattern #3: Optimization</text>
+
+  <text x="1140" y="190" text-anchor="middle" class="section-header">The Technique</text>
+  <text x="950" y="225" class="desc-text">Quantization: FP32 → INT8</text>
+  <text x="950" y="255" class="desc-text">(32-bit to 8-bit precision)</text>
+
+  <text x="1140" y="310" text-anchor="middle" class="section-header">The Results</text>
+
+  <rect x="950" y="340" width="380" height="140" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1140" y="370" text-anchor="middle" style="font: 16px sans-serif; fill: #2C3E50;">⚡ 4x faster performance</text>
+  <text x="1140" y="400" text-anchor="middle" style="font: 16px sans-serif; fill: #2C3E50;">📦 4x memory reduction</text>
+  <text x="1140" y="430" text-anchor="middle" style="font: 16px sans-serif; fill: #2C3E50;">💰 50-75% cost reduction</text>
+  <text x="1140" y="460" text-anchor="middle" style="font: 16px sans-serif; fill: #2C3E50;">🎯 &lt;1% accuracy loss</text>
+
+  <text x="1140" y="520" text-anchor="middle" class="section-header">Real Example</text>
+
+  <rect x="950" y="550" width="380" height="110" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1140" y="580" text-anchor="middle" style="font: bold 16px sans-serif; fill: #E67E50;">Before (FP32):</text>
+  <text x="965" y="610" style="font: 14px sans-serif; fill: #2C3E50;">• 4GB model, A100 GPU: $11.4K/mo</text>
+  <text x="965" y="640" style="font: 14px sans-serif; fill: #2C3E50;">• Latency: 200ms</text>
+
+  <rect x="950" y="680" width="380" height="110" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1140" y="710" text-anchor="middle" style="font: bold 16px sans-serif; fill: #E67E50;">After (INT8):</text>
+  <text x="965" y="740" style="font: 14px sans-serif; fill: #2C3E50;">• 1GB model, T4 GPU: $2.9K/mo</text>
+  <text x="965" y="770" style="font: bold 16px sans-serif; fill: #52A675;">✓ Saves $8.5K/month, 4x faster!</text>
+
+  <text x="1140" y="830" text-anchor="middle" style="font: bold 18px sans-serif; fill: #E67E50;">High-Volume Inference</text>
+</svg>

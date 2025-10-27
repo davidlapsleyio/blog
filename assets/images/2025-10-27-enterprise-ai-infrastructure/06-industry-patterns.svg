@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+      .light-orange-bg { fill: #FCF0EB; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .industry-title { font: bold 24px sans-serif; fill: #ffffff; }
+      .section-label { font: bold 16px sans-serif; fill: #5A6C7D; }
+      .item-text { font: 16px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Architecture Patterns by Industry</text>
+
+  <!-- Financial Services -->
+  <rect x="50" y="90" width="420" height="700" class="light-blue-bg card-border" rx="8"/>
+  <rect x="50" y="90" width="420" height="70" class="primary-blue" rx="8"/>
+  <text x="260" y="135" text-anchor="middle" class="industry-title">💰 Financial Services</text>
+
+  <text x="260" y="200" text-anchor="middle" class="section-label">USE CASES:</text>
+  <text x="70" y="235" class="item-text">• Fraud detection</text>
+  <text x="70" y="265" class="item-text">• Credit risk scoring</text>
+  <text x="70" y="295" class="item-text">• Trading algorithms</text>
+  <text x="70" y="325" class="item-text">• Anti-money laundering</text>
+
+  <text x="260" y="380" text-anchor="middle" class="section-label">ARCHITECTURE:</text>
+  <rect x="70" y="400" width="380" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="85" y="430" class="item-text">☁️ Cloud:</text>
+  <text x="95" y="455" style="font: 14px sans-serif; fill: #5A6C7D;">Training (burst capacity needed)</text>
+  <text x="85" y="490" class="item-text">🏢 On-Premises:</text>
+  <text x="95" y="515" style="font: 14px sans-serif; fill: #5A6C7D;">Inference (SOX, sub-50ms latency)</text>
+
+  <text x="260" y="570" text-anchor="middle" class="section-label">KEY DRIVERS:</text>
+  <rect x="70" y="590" width="380" height="160" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="85" y="625" class="item-text">🔒 Regulatory (SOX, PCI-DSS)</text>
+  <text x="85" y="665" class="item-text">⚡ Low latency (&lt;50ms)</text>
+  <text x="85" y="705" class="item-text">📊 High transaction volume</text>
+  <text x="95" y="730" style="font: 14px sans-serif; fill: #5A6C7D;">(millions per day)</text>
+
+  <!-- Healthcare -->
+  <rect x="490" y="90" width="420" height="700" class="light-teal-bg card-border" rx="8"/>
+  <rect x="490" y="90" width="420" height="70" class="secondary-teal" rx="8"/>
+  <text x="700" y="135" text-anchor="middle" class="industry-title">🏥 Healthcare</text>
+
+  <text x="700" y="200" text-anchor="middle" class="section-label">USE CASES:</text>
+  <text x="510" y="235" class="item-text">• Patient readmission risk</text>
+  <text x="510" y="265" class="item-text">• Medical image analysis</text>
+  <text x="510" y="295" class="item-text">• Clinical decision support</text>
+  <text x="510" y="325" class="item-text">• Drug interaction checking</text>
+
+  <text x="700" y="380" text-anchor="middle" class="section-label">ARCHITECTURE:</text>
+  <rect x="510" y="400" width="380" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="525" y="430" class="item-text">🏢 On-Premises:</text>
+  <text x="535" y="455" style="font: 14px sans-serif; fill: #5A6C7D;">Everything (HIPAA compliance)</text>
+  <text x="525" y="490" class="item-text">☁️ Cloud:</text>
+  <text x="535" y="515" style="font: 14px sans-serif; fill: #5A6C7D;">Research on de-identified data only</text>
+
+  <text x="700" y="570" text-anchor="middle" class="section-label">KEY DRIVERS:</text>
+  <rect x="510" y="590" width="380" height="160" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="525" y="625" class="item-text">🔐 Patient privacy (non-negotiable)</text>
+  <text x="525" y="665" class="item-text">🏛️ Data sovereignty required</text>
+  <text x="525" y="705" class="item-text">📋 HIPAA compliance</text>
+  <text x="535" y="730" style="font: 14px sans-serif; fill: #5A6C7D;">(18 technical safeguards)</text>
+
+  <!-- Manufacturing -->
+  <rect x="930" y="90" width="420" height="700" class="light-orange-bg card-border" rx="8"/>
+  <rect x="930" y="90" width="420" height="70" class="accent-orange" rx="8"/>
+  <text x="1140" y="135" text-anchor="middle" class="industry-title">🏭 Manufacturing</text>
+
+  <text x="1140" y="200" text-anchor="middle" class="section-label">USE CASES:</text>
+  <text x="950" y="235" class="item-text">• Predictive maintenance</text>
+  <text x="950" y="265" class="item-text">• Quality defect detection</text>
+  <text x="950" y="295" class="item-text">• Supply chain optimization</text>
+  <text x="950" y="325" class="item-text">• Energy consumption</text>
+
+  <text x="1140" y="380" text-anchor="middle" class="section-label">ARCHITECTURE:</text>
+  <rect x="950" y="400" width="380" height="150" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="965" y="430" class="item-text">📡 Edge:</text>
+  <text x="975" y="455" style="font: 14px sans-serif; fill: #5A6C7D;">Factory floor (real-time control)</text>
+  <text x="965" y="485" class="item-text">☁️ Cloud: Training &amp; analytics</text>
+  <text x="965" y="520" class="item-text">🏢 On-Prem: Critical inference</text>
+
+  <text x="1140" y="590" text-anchor="middle" class="section-label">KEY DRIVERS:</text>
+  <rect x="950" y="610" width="380" height="140" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="965" y="645" class="item-text">⚡ Real-time control (ms latency)</text>
+  <text x="965" y="685" class="item-text">💰 Cost efficiency</text>
+  <text x="965" y="725" class="item-text">🔄 Operational flexibility</text>
+
+  <!-- Bottom note -->
+  <text x="700" y="820" text-anchor="middle" style="font: italic 16px sans-serif; fill: #5A6C7D;">Same technology stack—deployed differently based on constraints</text>
+</svg>

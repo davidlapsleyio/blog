@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      /* Professional Color Palette */
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-orange-bg { fill: #FCF0EB; }
+
+      /* Typography */
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .header { font: bold 20px sans-serif; fill: #ffffff; }
+      .dimension-title { font: bold 18px sans-serif; fill: #2C3E50; }
+      .item-text { font: 16px sans-serif; fill: #2C3E50; }
+      .small-text { font: 14px sans-serif; fill: #5A6C7D; }
+
+      /* Common styling */
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Architecture Reality Check: Public AI vs Enterprise AI</text>
+
+  <!-- Column Headers -->
+  <rect x="50" y="80" width="600" height="50" class="primary-blue" rx="8"/>
+  <text x="350" y="113" text-anchor="middle" class="header">Public AI Services (ChatGPT/Claude)</text>
+
+  <rect x="750" y="80" width="600" height="50" class="accent-orange" rx="8"/>
+  <text x="1050" y="113" text-anchor="middle" class="header">Enterprise AI Deployment</text>
+
+  <!-- Dimension 1: Scale & Availability -->
+  <rect x="50" y="150" width="600" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="175" text-anchor="middle" class="dimension-title">1. Scale & Availability</text>
+  <text x="70" y="205" class="item-text">• Best-effort service</text>
+  <text x="70" y="230" class="item-text">• Occasional downtime acceptable</text>
+  <text x="70" y="255" class="item-text">• Shared among millions of users</text>
+
+  <rect x="750" y="150" width="600" height="110" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="175" text-anchor="middle" class="dimension-title">1. Scale & Availability</text>
+  <text x="770" y="205" class="item-text">• Business-critical: 99.9% uptime SLA</text>
+  <text x="770" y="230" class="item-text">• Sub-200ms latency requirement</text>
+  <text x="770" y="255" class="item-text">• Process TB-PB of data continuously</text>
+
+  <!-- Dimension 2: Compliance & Regulation -->
+  <rect x="50" y="280" width="600" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="305" text-anchor="middle" class="dimension-title">2. Compliance & Regulation</text>
+  <text x="70" y="335" class="item-text">• Provider handles compliance</text>
+  <text x="70" y="360" class="item-text">• Data stored on provider infrastructure</text>
+  <text x="70" y="385" class="small-text">  (acceptable for consumer use)</text>
+
+  <rect x="750" y="280" width="600" height="110" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="305" text-anchor="middle" class="dimension-title">2. Compliance & Regulation</text>
+  <text x="770" y="335" class="item-text">• HIPAA/SOX/GDPR certification required</text>
+  <text x="770" y="360" class="item-text">• Data sovereignty: can't leave data center</text>
+  <text x="770" y="385" class="small-text">  (violations = $50K+ per record)</text>
+
+  <!-- Dimension 3: Integration -->
+  <rect x="50" y="410" width="600" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="435" text-anchor="middle" class="dimension-title">3. Integration</text>
+  <text x="70" y="465" class="item-text">• Simple API access</text>
+  <text x="70" y="490" class="item-text">• No legacy system integration needed</text>
+  <text x="70" y="515" class="item-text">• Upload data, get predictions</text>
+
+  <rect x="750" y="410" width="600" height="110" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="435" text-anchor="middle" class="dimension-title">3. Integration</text>
+  <text x="770" y="465" class="item-text">• Oracle databases from 1998</text>
+  <text x="770" y="490" class="item-text">• Mainframe systems (no API access)</text>
+  <text x="770" y="515" class="item-text">• 47 different permission schemas</text>
+
+  <!-- Dimension 4: Accountability -->
+  <rect x="50" y="540" width="600" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="565" text-anchor="middle" class="dimension-title">4. Accountability</text>
+  <text x="70" y="595" class="item-text">• Can apologize for errors</text>
+  <text x="70" y="620" class="item-text">• No financial consequences</text>
+  <text x="70" y="645" class="small-text">  ("Sorry, let me try again")</text>
+
+  <rect x="750" y="540" width="600" height="110" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="565" text-anchor="middle" class="dimension-title">4. Accountability</text>
+  <text x="770" y="595" class="item-text">• Complete audit trail required</text>
+  <text x="770" y="620" class="item-text">• Explainable predictions (regulatory)</text>
+  <text x="770" y="645" class="small-text">  (wrong decision = real consequences)</text>
+
+  <!-- Dimension 5: Cost Model -->
+  <rect x="50" y="670" width="600" height="90" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="695" text-anchor="middle" class="dimension-title">5. Cost Model</text>
+  <text x="70" y="725" class="item-text">• Pay per API call</text>
+  <text x="70" y="750" class="item-text">• Predictable: $0.01-0.10 per request</text>
+
+  <rect x="750" y="670" width="600" height="90" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="695" text-anchor="middle" class="dimension-title">5. Cost Model</text>
+  <text x="770" y="725" class="item-text">• GPU infrastructure: $57K/month per model</text>
+  <text x="770" y="750" class="item-text">• Training + Inference + Storage + Compliance</text>
+
+  <!-- Dimension 6: Control & Customization -->
+  <rect x="50" y="780" width="600" height="90" class="light-blue-bg card-border" rx="5"/>
+  <text x="350" y="805" text-anchor="middle" class="dimension-title">6. Control & Customization</text>
+  <text x="70" y="835" class="item-text">• Use what provider offers</text>
+  <text x="70" y="860" class="item-text">• Limited model customization</text>
+
+  <rect x="750" y="780" width="600" height="90" class="light-orange-bg card-border" rx="5"/>
+  <text x="1050" y="805" text-anchor="middle" class="dimension-title">6. Control & Customization</text>
+  <text x="770" y="835" class="item-text">• Full control of models and infrastructure</text>
+  <text x="770" y="860" class="item-text">• Custom architectures for specific needs</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .success-green { fill: #52A675; }
+      .neutral-gray { fill: #5A6C7D; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .subtitle { font: 18px sans-serif; fill: #5A6C7D; }
+      .chart-title { font: bold 22px sans-serif; fill: #2C3E50; }
+      .label-text { font: 16px sans-serif; fill: #2C3E50; }
+      .value-text { font: bold 18px sans-serif; fill: #2C3E50; }
+      .table-header { font: bold 16px sans-serif; fill: #ffffff; }
+      .table-cell { font: 16px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Cost Allocation Dashboard</text>
+  <text x="700" y="75" text-anchor="middle" class="subtitle">Monthly GPU usage breakdown by team for chargeback</text>
+
+  <!-- Cost Table -->
+  <text x="700" y="130" text-anchor="middle" class="chart-title">Monthly Cost Breakdown</text>
+
+  <!-- Table Header -->
+  <rect x="200" y="160" width="1000" height="50" class="neutral-gray" rx="5"/>
+  <text x="270" y="192" class="table-header">Team</text>
+  <text x="570" y="192" class="table-header">GPU-Hours</text>
+  <text x="780" y="192" class="table-header">Cost</text>
+  <text x="1000" y="192" class="table-header">% of Total</text>
+  <text x="1140" y="192" class="table-header">Visual</text>
+
+  <!-- Finance Row -->
+  <rect x="200" y="210" width="1000" height="55" fill="#E8F1F5" rx="3"/>
+  <circle cx="225" cy="237" r="10" class="primary-blue"/>
+  <text x="270" y="242" class="table-cell">Finance</text>
+  <text x="570" y="242" class="value-text">5,760</text>
+  <text x="780" y="242" class="value-text">$22,176</text>
+  <text x="1000" y="242" class="value-text">35%</text>
+  <!-- Progress bar -->
+  <rect x="1050" y="222" width="140" height="30" fill="#ffffff" stroke="#5A6C7D" stroke-width="1" rx="3"/>
+  <rect x="1050" y="222" width="98" height="30" class="primary-blue" rx="3"/>
+
+  <!-- Marketing Row -->
+  <rect x="200" y="265" width="1000" height="55" fill="#E8F3F3" rx="3"/>
+  <circle cx="225" cy="292" r="10" class="secondary-teal"/>
+  <text x="270" y="297" class="table-cell">Marketing</text>
+  <text x="570" y="297" class="value-text">3,840</text>
+  <text x="780" y="297" class="value-text">$14,784</text>
+  <text x="1000" y="297" class="value-text">23%</text>
+  <!-- Progress bar -->
+  <rect x="1050" y="277" width="140" height="30" fill="#ffffff" stroke="#5A6C7D" stroke-width="1" rx="3"/>
+  <rect x="1050" y="277" width="64" height="30" class="secondary-teal" rx="3"/>
+
+  <!-- Research Row -->
+  <rect x="200" y="320" width="1000" height="55" fill="#E8F5EE" rx="3"/>
+  <circle cx="225" cy="347" r="10" class="success-green"/>
+  <text x="270" y="352" class="table-cell">Research</text>
+  <text x="570" y="352" class="value-text">8,640</text>
+  <text x="780" y="352" class="value-text">$33,264</text>
+  <text x="1000" y="352" class="value-text">42%</text>
+  <!-- Progress bar -->
+  <rect x="1050" y="332" width="140" height="30" fill="#ffffff" stroke="#5A6C7D" stroke-width="1" rx="3"/>
+  <rect x="1050" y="332" width="118" height="30" class="success-green" rx="3"/>
+
+  <!-- Total Row -->
+  <rect x="200" y="375" width="1000" height="55" class="neutral-gray" rx="3"/>
+  <text x="270" y="407" style="font: bold 18px sans-serif; fill: #ffffff;">TOTAL</text>
+  <text x="570" y="407" style="font: bold 20px sans-serif; fill: #ffffff;">18,240</text>
+  <text x="780" y="407" style="font: bold 20px sans-serif; fill: #ffffff;">$70,224</text>
+  <text x="1000" y="407" style="font: bold 18px sans-serif; fill: #ffffff;">100%</text>
+  <rect x="1050" y="390" width="140" height="30" class="neutral-gray" rx="3"/>
+
+  <!-- Benefits -->
+  <rect x="50" y="520" width="1300" height="150" fill="#F8F9FA" class="card-border" rx="8"/>
+  <text x="700" y="560" text-anchor="middle" style="font: bold 24px sans-serif; fill: #2C3E50;">Why Cost Allocation Matters</text>
+
+  <text x="100" y="605" style="font: bold 18px sans-serif; fill: #52A675;">✓ Visibility:</text>
+  <text x="120" y="635" style="font: 16px sans-serif; fill: #2C3E50;">Teams see real costs → encourages optimization</text>
+
+  <text x="500" y="605" style="font: bold 18px sans-serif; fill: #52A675;">✓ Chargeback:</text>
+  <text x="520" y="635" style="font: 16px sans-serif; fill: #2C3E50;">Enables cost allocation to business units</text>
+
+  <text x="900" y="605" style="font: bold 18px sans-serif; fill: #52A675;">✓ ROI Justification:</text>
+  <text x="920" y="635" style="font: 16px sans-serif; fill: #2C3E50;">Justify infrastructure investment to CFO</text>
+</svg>

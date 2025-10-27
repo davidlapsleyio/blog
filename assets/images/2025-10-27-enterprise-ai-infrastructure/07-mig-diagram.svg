@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 750">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .success-green { fill: #52A675; }
+      .warning-red { fill: #C9594C; }
+      .neutral-gray { fill: #5A6C7D; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-green-bg { fill: #E8F5EE; }
+      .light-red-bg { fill: #FAE8E6; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .subtitle { font: 18px sans-serif; fill: #5A6C7D; }
+      .section-title { font: bold 24px sans-serif; fill: #2C3E50; }
+      .label-text { font: 18px sans-serif; fill: #ffffff; }
+      .metric-text { font: bold 24px sans-serif; }
+      .benefit-text { font: 18px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Multi-Instance GPU (MIG): 1 GPU → 7 Workloads</text>
+  <text x="700" y="75" text-anchor="middle" class="subtitle">NVIDIA A100/H100 GPUs with MIG Technology</text>
+
+  <!-- Before: Traditional GPU -->
+  <text x="300" y="135" text-anchor="middle" class="section-title">Before: Traditional GPU</text>
+
+  <rect x="100" y="160" width="400" height="180" class="light-red-bg card-border" rx="8"/>
+  <text x="300" y="225" text-anchor="middle" style="font: bold 26px sans-serif; fill: #C9594C;">NVIDIA A100 GPU</text>
+  <text x="300" y="260" text-anchor="middle" style="font: 20px sans-serif; fill: #5A6C7D;">40GB Memory</text>
+  <text x="300" y="295" text-anchor="middle" style="font: bold 22px sans-serif; fill: #2C3E50;">1 Workload (Uses 10GB)</text>
+  <text x="300" y="325" text-anchor="middle" style="font: bold 20px sans-serif; fill: #C9594C;">30GB idle = 75% wasted</text>
+
+  <rect x="100" y="360" width="400" height="80" class="warning-red" rx="8"/>
+  <text x="300" y="390" text-anchor="middle" style="font: 20px sans-serif; fill: #ffffff;">Utilization:</text>
+  <text x="300" y="425" text-anchor="middle" style="font: bold 32px sans-serif; fill: #ffffff;">20%</text>
+
+  <!-- Arrow -->
+  <path d="M 550 255 L 800 255" stroke="#52A675" stroke-width="6" marker-end="url(#arrow-mig)"/>
+  <defs>
+    <marker id="arrow-mig" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#52A675"/>
+    </marker>
+  </defs>
+  <text x="675" y="240" text-anchor="middle" style="font: bold 22px sans-serif; fill: #52A675;">MIG</text>
+
+  <!-- After: MIG Enabled -->
+  <text x="1050" y="135" text-anchor="middle" class="section-title">After: MIG Enabled</text>
+
+  <rect x="800" y="160" width="500" height="180" class="light-green-bg card-border" rx="8"/>
+
+  <!-- 7 Instances simplified visualization -->
+  <rect x="820" y="180" width="220" height="60" class="primary-blue" rx="5"/>
+  <text x="930" y="217" text-anchor="middle" class="label-text">Instance 1 (20GB)</text>
+
+  <rect x="1060" y="180" width="105" height="60" class="secondary-teal" rx="5"/>
+  <text x="1112" y="217" text-anchor="middle" class="label-text">I2 (10GB)</text>
+
+  <rect x="1185" y="180" width="105" height="60" class="accent-orange" rx="5"/>
+  <text x="1237" y="217" text-anchor="middle" class="label-text">I3 (10GB)</text>
+
+  <rect x="820" y="260" width="80" height="60" class="success-green" rx="5"/>
+  <text x="860" y="297" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">I4 (5GB)</text>
+
+  <rect x="920" y="260" width="80" height="60" class="primary-blue" rx="5"/>
+  <text x="960" y="297" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">I5 (5GB)</text>
+
+  <rect x="1020" y="260" width="80" height="60" class="secondary-teal" rx="5"/>
+  <text x="1060" y="297" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">I6 (5GB)</text>
+
+  <rect x="1120" y="260" width="170" height="60" class="accent-orange" rx="5"/>
+  <text x="1205" y="297" text-anchor="middle" class="label-text">Instance 7 (5GB)</text>
+
+  <rect x="800" y="360" width="500" height="80" class="success-green" rx="8"/>
+  <text x="1050" y="390" text-anchor="middle" style="font: 20px sans-serif; fill: #ffffff;">Utilization:</text>
+  <text x="1050" y="425" text-anchor="middle" style="font: bold 32px sans-serif; fill: #ffffff;">70-75%</text>
+
+  <!-- Benefits -->
+  <rect x="50" y="480" width="1300" height="230" fill="#F8F9FA" class="card-border" rx="8"/>
+  <text x="700" y="525" text-anchor="middle" style="font: bold 28px sans-serif; fill: #2C3E50;">Benefits of MIG</text>
+
+  <rect x="80" y="560" width="280" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="220" y="595" text-anchor="middle" style="font: bold 20px sans-serif; fill: #52A675;">Hardware Isolation</text>
+  <text x="220" y="630" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">Dedicated memory</text>
+  <text x="220" y="655" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">&amp; compute per instance</text>
+
+  <rect x="390" y="560" width="280" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="530" y="595" text-anchor="middle" style="font: bold 20px sans-serif; fill: #52A675;">3-5x Workloads</text>
+  <text x="530" y="630" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">Per GPU</text>
+  <text x="530" y="655" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">(validated by Uber)</text>
+
+  <rect x="700" y="560" width="280" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="840" y="595" text-anchor="middle" style="font: bold 20px sans-serif; fill: #52A675;">50-70% Cost Cut</text>
+  <text x="840" y="630" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">Same infrastructure</text>
+  <text x="840" y="655" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">better utilization</text>
+
+  <rect x="1010" y="560" width="280" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1150" y="595" text-anchor="middle" style="font: bold 20px sans-serif; fill: #52A675;">Multi-Tenant Security</text>
+  <text x="1150" y="630" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">Isolated boundaries</text>
+  <text x="1150" y="655" text-anchor="middle" style="font: 16px sans-serif; fill: #5A6C7D;">for each workload</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .neutral-gray { fill: #5A6C7D; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+      .light-orange-bg { fill: #FCF0EB; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .subtitle { font: 18px sans-serif; fill: #5A6C7D; }
+      .cluster-label { font: bold 22px sans-serif; fill: #2C3E50; }
+      .namespace-title { font: bold 20px sans-serif; fill: #ffffff; }
+      .section-title { font: bold 16px sans-serif; }
+      .resource-text { font: 16px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Multi-Tenancy: Namespace-Based Isolation</text>
+  <text x="700" y="75" text-anchor="middle" class="subtitle">Shared infrastructure with security boundaries and resource quotas</text>
+
+  <!-- Kubernetes Cluster -->
+  <rect x="50" y="110" width="1300" height="690" fill="#F8F9FA" class="card-border" rx="8"/>
+  <text x="700" y="150" text-anchor="middle" class="cluster-label">🎯 Kubernetes Cluster (Shared Infrastructure)</text>
+
+  <!-- Control Plane -->
+  <rect x="100" y="170" width="1200" height="50" class="neutral-gray" rx="5"/>
+  <text x="700" y="202" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Control Plane (API Server, Scheduler, Controllers)</text>
+
+  <!-- Namespace 1: Finance -->
+  <rect x="100" y="250" width="360" height="510" class="light-blue-bg card-border" rx="8"/>
+  <rect x="100" y="250" width="360" height="60" class="primary-blue" rx="8"/>
+  <text x="280" y="288" text-anchor="middle" class="namespace-title">Namespace: team-finance</text>
+
+  <rect x="120" y="330" width="320" height="140" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="280" y="360" text-anchor="middle" class="section-title" style="fill: #2C5F8D;">Resource Quota</text>
+  <text x="135" y="390" class="resource-text">GPUs: 8 (max)</text>
+  <text x="135" y="420" class="resource-text">CPU: 64 cores (max)</text>
+  <text x="135" y="450" class="resource-text">Memory: 512Gi (max)</text>
+
+  <rect x="120" y="490" width="320" height="100" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="280" y="520" text-anchor="middle" class="section-title" style="fill: #2C5F8D;">RBAC Access</text>
+  <text x="135" y="550" class="resource-text">👥 Finance Team</text>
+  <text x="135" y="575" style="font: 14px sans-serif; fill: #5A6C7D;">• Deploy/update models</text>
+
+  <rect x="120" y="610" width="320" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="280" y="640" text-anchor="middle" class="section-title" style="fill: #2C5F8D;">Running Workloads</text>
+  <rect x="135" y="660" width="140" height="50" class="primary-blue" rx="5"/>
+  <text x="205" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">Fraud Detection</text>
+  <rect x="290" y="660" width="135" height="50" class="primary-blue" rx="5"/>
+  <text x="357" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">Risk Scoring</text>
+
+  <!-- Namespace 2: Marketing -->
+  <rect x="520" y="250" width="360" height="510" class="light-teal-bg card-border" rx="8"/>
+  <rect x="520" y="250" width="360" height="60" class="secondary-teal" rx="8"/>
+  <text x="700" y="288" text-anchor="middle" class="namespace-title">Namespace: team-marketing</text>
+
+  <rect x="540" y="330" width="320" height="140" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="700" y="360" text-anchor="middle" class="section-title" style="fill: #287D7D;">Resource Quota</text>
+  <text x="555" y="390" class="resource-text">GPUs: 4 (max)</text>
+  <text x="555" y="420" class="resource-text">CPU: 32 cores (max)</text>
+  <text x="555" y="450" class="resource-text">Memory: 256Gi (max)</text>
+
+  <rect x="540" y="490" width="320" height="100" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="700" y="520" text-anchor="middle" class="section-title" style="fill: #287D7D;">RBAC Access</text>
+  <text x="555" y="550" class="resource-text">👥 Marketing Team</text>
+  <text x="555" y="575" style="font: 14px sans-serif; fill: #5A6C7D;">• Deploy/update models</text>
+
+  <rect x="540" y="610" width="320" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="700" y="640" text-anchor="middle" class="section-title" style="fill: #287D7D;">Running Workloads</text>
+  <rect x="555" y="660" width="140" height="50" class="secondary-teal" rx="5"/>
+  <text x="625" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">Recommendations</text>
+  <rect x="710" y="660" width="135" height="50" class="secondary-teal" rx="5"/>
+  <text x="777" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">Churn Predict</text>
+
+  <!-- Namespace 3: Research -->
+  <rect x="940" y="250" width="360" height="510" class="light-orange-bg card-border" rx="8"/>
+  <rect x="940" y="250" width="360" height="60" class="accent-orange" rx="8"/>
+  <text x="1120" y="288" text-anchor="middle" class="namespace-title">Namespace: team-research</text>
+
+  <rect x="960" y="330" width="320" height="140" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1120" y="360" text-anchor="middle" class="section-title" style="fill: #E67E50;">Resource Quota</text>
+  <text x="975" y="390" class="resource-text">GPUs: 16 (max)</text>
+  <text x="975" y="420" class="resource-text">CPU: 128 cores (max)</text>
+  <text x="975" y="450" class="resource-text">Memory: 1024Gi (max)</text>
+
+  <rect x="960" y="490" width="320" height="100" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1120" y="520" text-anchor="middle" class="section-title" style="fill: #E67E50;">RBAC Access</text>
+  <text x="975" y="550" class="resource-text">👥 Research Team</text>
+  <text x="975" y="575" style="font: 14px sans-serif; fill: #5A6C7D;">• Deploy/update models</text>
+
+  <rect x="960" y="610" width="320" height="120" fill="#ffffff" class="card-border" rx="5"/>
+  <text x="1120" y="640" text-anchor="middle" class="section-title" style="fill: #E67E50;">Running Workloads</text>
+  <rect x="975" y="660" width="140" height="50" class="accent-orange" rx="5"/>
+  <text x="1045" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">LLM Training</text>
+  <rect x="1130" y="660" width="135" height="50" class="accent-orange" rx="5"/>
+  <text x="1197" y="692" text-anchor="middle" style="font: 16px sans-serif; fill: #ffffff;">Experiments</text>
+
+  <!-- Bottom Benefits -->
+  <text x="700" y="825" text-anchor="middle" style="font: bold 18px sans-serif; fill: #2C3E50;">✓ Isolation • ✓ Fair Sharing • ✓ Security • ✓ Cost Allocation</text>
+</svg>

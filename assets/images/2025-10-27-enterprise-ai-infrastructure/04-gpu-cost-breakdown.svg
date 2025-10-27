@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .warning-red { fill: #C9594C; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .subtitle { font: 18px sans-serif; fill: #5A6C7D; }
+      .label { font: 16px sans-serif; fill: #2C3E50; }
+      .value { font: bold 20px sans-serif; fill: #2C3E50; }
+      .big-value { font: bold 36px sans-serif; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">GPU Cost Reality: When $5K Becomes $57K Per Model</text>
+  <text x="700" y="75" text-anchor="middle" class="subtitle">Monthly costs for a typical production model</text>
+
+  <!-- Training Phase -->
+  <rect x="100" y="130" width="550" height="130" class="light-blue-bg card-border" rx="8"/>
+  <rect x="100" y="130" width="550" height="50" class="primary-blue" rx="8"/>
+  <text x="375" y="163" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">Training Phase</text>
+  <text x="375" y="210" text-anchor="middle" class="label">16 GPUs × $2,850/GPU</text>
+  <text x="375" y="250" text-anchor="middle" class="big-value" style="fill: #2C5F8D;">$45,600/month</text>
+
+  <!-- Inference Phase -->
+  <rect x="700" y="130" width="550" height="130" class="light-teal-bg card-border" rx="8"/>
+  <rect x="700" y="130" width="550" height="50" class="secondary-teal" rx="8"/>
+  <text x="975" y="163" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">Inference Phase</text>
+  <text x="975" y="210" text-anchor="middle" class="label">4 GPUs × $2,850/GPU</text>
+  <text x="975" y="250" text-anchor="middle" class="big-value" style="fill: #287D7D;">$11,400/month</text>
+
+  <!-- Total per model -->
+  <rect x="100" y="290" width="1150" height="90" class="warning-red" rx="8"/>
+  <text x="675" y="330" text-anchor="middle" style="font: bold 24px sans-serif; fill: #ffffff;">Total per model:</text>
+  <text x="675" y="365" text-anchor="middle" class="big-value" style="fill: #ffffff;">$57,000/month</text>
+
+  <!-- Scale to 5 models -->
+  <text x="700" y="430" text-anchor="middle" style="font: bold 24px sans-serif; fill: #2C3E50;">Scale to 5 Models:</text>
+
+  <!-- 5 model bars -->
+  <rect x="150" y="460" width="200" height="160" class="primary-blue card-border" rx="8"/>
+  <text x="250" y="515" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Model 1</text>
+  <text x="250" y="550" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">$57K</text>
+
+  <rect x="375" y="460" width="200" height="160" class="primary-blue card-border" rx="8"/>
+  <text x="475" y="515" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Model 2</text>
+  <text x="475" y="550" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">$57K</text>
+
+  <rect x="600" y="460" width="200" height="160" class="primary-blue card-border" rx="8"/>
+  <text x="700" y="515" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Model 3</text>
+  <text x="700" y="550" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">$57K</text>
+
+  <rect x="825" y="460" width="200" height="160" class="primary-blue card-border" rx="8"/>
+  <text x="925" y="515" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Model 4</text>
+  <text x="925" y="550" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">$57K</text>
+
+  <rect x="1050" y="460" width="200" height="160" class="primary-blue card-border" rx="8"/>
+  <text x="1150" y="515" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">Model 5</text>
+  <text x="1150" y="550" text-anchor="middle" style="font: bold 22px sans-serif; fill: #ffffff;">$57K</text>
+
+  <!-- Total for 5 models -->
+  <rect x="100" y="650" width="1150" height="60" class="warning-red" rx="8"/>
+  <text x="675" y="690" text-anchor="middle" class="big-value" style="fill: #ffffff;">$285,000/month = $3.4M/year</text>
+</svg>

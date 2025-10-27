@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950">
+  <defs>
+    <style>
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .warning-red { fill: #C9594C; }
+      .success-green { fill: #52A675; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+      .light-red-bg { fill: #FAE8E6; }
+      .light-green-bg { fill: #E8F5EE; }
+
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .question-header { font: bold 22px sans-serif; fill: #ffffff; }
+      .box-title { font: bold 18px sans-serif; fill: #2C3E50; }
+      .desc-text { font: 16px sans-serif; fill: #2C3E50; }
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">Decision Framework: Three Questions</text>
+
+  <!-- Question 1 -->
+  <rect x="450" y="90" width="500" height="90" class="primary-blue card-border" rx="8"/>
+  <text x="700" y="125" text-anchor="middle" class="question-header">Question 1</text>
+  <text x="700" y="155" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">What are your non-negotiable constraints?</text>
+
+  <rect x="100" y="210" width="360" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="280" y="245" text-anchor="middle" class="box-title">Regulatory</text>
+  <text x="120" y="275" class="desc-text">HIPAA? SOX? GDPR?</text>
+  <text x="120" y="300" class="desc-text">→ Data sovereignty required</text>
+
+  <rect x="520" y="210" width="360" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="700" y="245" text-anchor="middle" class="box-title">Latency</text>
+  <text x="540" y="275" class="desc-text">Real-time (&lt;100ms)?</text>
+  <text x="540" y="300" class="desc-text">→ On-prem inference needed</text>
+
+  <rect x="940" y="210" width="360" height="110" class="light-blue-bg card-border" rx="5"/>
+  <text x="1120" y="245" text-anchor="middle" class="box-title">Budget</text>
+  <text x="960" y="275" class="desc-text">Hard ceiling?</text>
+  <text x="960" y="300" class="desc-text">→ Drives cloud vs. on-prem</text>
+
+  <!-- Arrow -->
+  <path d="M 700 330 L 700 390" stroke="#5A6C7D" stroke-width="5" marker-end="url(#arrow1)"/>
+  <defs>
+    <marker id="arrow1" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#5A6C7D"/>
+    </marker>
+  </defs>
+
+  <!-- Question 2 -->
+  <rect x="450" y="390" width="500" height="90" class="secondary-teal card-border" rx="8"/>
+  <text x="700" y="425" text-anchor="middle" class="question-header">Question 2</text>
+  <text x="700" y="455" text-anchor="middle" style="font: 18px sans-serif; fill: #ffffff;">What's your risk tolerance?</text>
+
+  <rect x="100" y="510" width="360" height="110" class="light-teal-bg card-border" rx="5"/>
+  <text x="280" y="545" text-anchor="middle" class="box-title">Data Sovereignty</text>
+  <text x="120" y="575" class="desc-text">Can data touch cloud or must</text>
+  <text x="120" y="600" class="desc-text">stay in your datacenter?</text>
+
+  <rect x="520" y="510" width="360" height="110" class="light-teal-bg card-border" rx="5"/>
+  <text x="700" y="545" text-anchor="middle" class="box-title">Build vs. Buy</text>
+  <text x="540" y="575" class="desc-text">Team to build custom or need</text>
+  <text x="540" y="600" class="desc-text">managed services?</text>
+
+  <rect x="940" y="510" width="360" height="110" class="light-teal-bg card-border" rx="5"/>
+  <text x="1120" y="545" text-anchor="middle" class="box-title">Vendor Lock-in</text>
+  <text x="960" y="575" class="desc-text">Accept AWS/Azure tie or need</text>
+  <text x="960" y="600" class="desc-text">portability (Kubernetes)?</text>
+
+  <!-- Arrow -->
+  <path d="M 700 630 L 700 690" stroke="#5A6C7D" stroke-width="5" marker-end="url(#arrow2)"/>
+  <defs>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#5A6C7D"/>
+    </marker>
+  </defs>
+
+  <!-- Question 3 -->
+  <rect x="300" y="690" width="800" height="90" class="warning-red card-border" rx="8"/>
+  <text x="700" y="725" text-anchor="middle" class="question-header">Question 3: The Critical Question</text>
+  <text x="700" y="755" text-anchor="middle" style="font: 20px sans-serif; fill: #ffffff;">What does success look like in 6 months?</text>
+
+  <rect x="100" y="810" width="600" height="110" class="light-red-bg card-border" rx="5"/>
+  <text x="400" y="845" text-anchor="middle" style="font: bold 20px sans-serif; fill: #C9594C;">❌ Option B: The 87%</text>
+  <text x="120" y="875" class="desc-text">Perfect platform built, production-ready,</text>
+  <text x="120" y="900" class="desc-text">but NOT serving model #1 yet</text>
+
+  <rect x="750" y="810" width="600" height="110" class="light-green-bg card-border" rx="5"/>
+  <text x="1050" y="845" text-anchor="middle" style="font: bold 20px sans-serif; fill: #52A675;">✓ Option A: The 13%</text>
+  <text x="770" y="875" class="desc-text">First production model LIVE, serving</text>
+  <text x="770" y="900" class="desc-text">real users, delivering business value</text>
+</svg>

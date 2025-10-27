@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 690">
+  <defs>
+    <style>
+      /* Professional Color Palette */
+      .primary-blue { fill: #2C5F8D; }
+      .secondary-teal { fill: #287D7D; }
+      .accent-orange { fill: #E67E50; }
+      .success-green { fill: #52A675; }
+      .warning-red { fill: #C9594C; }
+      .neutral-gray { fill: #5A6C7D; }
+      .light-blue-bg { fill: #E8F1F5; }
+      .light-teal-bg { fill: #E8F3F3; }
+      .light-orange-bg { fill: #FCF0EB; }
+
+      /* Typography */
+      .title { font: bold 32px sans-serif; fill: #2C3E50; }
+      .header { font: bold 20px sans-serif; fill: #ffffff; }
+      .item-text { font: 16px sans-serif; fill: #2C3E50; }
+
+      /* Common styling */
+      .card-border { stroke: #5A6C7D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">The POC vs Production Gap: 8 Dimensions You Didn't Budget For</text>
+
+  <!-- Column Headers -->
+  <rect x="50" y="90" width="600" height="50" class="primary-blue" rx="8"/>
+  <text x="350" y="123" text-anchor="middle" class="header">POC (Proof of Concept)</text>
+
+  <rect x="750" y="90" width="600" height="50" class="warning-red" rx="8"/>
+  <text x="1050" y="123" text-anchor="middle" class="header">Production</text>
+
+  <!-- Row 1: Infrastructure -->
+  <rect x="50" y="160" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="193" class="item-text">💻 Laptop or single GPU</text>
+
+  <rect x="750" y="160" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="193" class="item-text">🖥️ GPU cluster or cloud infrastructure</text>
+
+  <!-- Row 2: Data Scale -->
+  <rect x="50" y="225" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="258" class="item-text">📊 Sample dataset (GB)</text>
+
+  <rect x="750" y="225" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="258" class="item-text">📈 Full production data (TB-PB)</text>
+
+  <!-- Row 3: SLA -->
+  <rect x="50" y="290" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="323" class="item-text">⏱️ Best-effort latency</text>
+
+  <rect x="750" y="290" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="323" class="item-text">⚡ SLA: &lt;200ms, 99.9% uptime</text>
+
+  <!-- Row 4: Access -->
+  <rect x="50" y="355" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="388" class="item-text">👤 Developer access only</text>
+
+  <rect x="750" y="355" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="388" class="item-text">👥 Multi-team, multi-tenant platform</text>
+
+  <!-- Row 5: Audit -->
+  <rect x="50" y="420" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="453" class="item-text">📝 No audit trail</text>
+
+  <rect x="750" y="420" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="453" class="item-text">📋 Complete audit logging</text>
+
+  <!-- Row 6: Updates -->
+  <rect x="50" y="485" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="518" class="item-text">🔄 Ad-hoc model updates</text>
+
+  <rect x="750" y="485" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="518" class="item-text">🔁 CI/CD pipeline, versioning</text>
+
+  <!-- Row 7: Compliance -->
+  <rect x="50" y="550" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="583" class="item-text">✅ No compliance review</text>
+
+  <rect x="750" y="550" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="583" class="item-text">🔒 HIPAA/SOX/GDPR certification</text>
+
+  <!-- Row 8: Cost Monitoring -->
+  <rect x="50" y="615" width="600" height="55" class="light-blue-bg card-border" rx="5"/>
+  <text x="70" y="648" class="item-text">💵 No cost monitoring</text>
+
+  <rect x="750" y="615" width="600" height="55" class="light-orange-bg card-border" rx="5"/>
+  <text x="770" y="648" class="item-text">💰 Chargeback, cost allocation</text>
+</svg>
