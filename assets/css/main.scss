@@ -1,0 +1,51 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Custom width overrides */
+.page {
+  @include breakpoint($large) {
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
+  }
+}
+
+.page__content {
+  @include breakpoint($medium) {
+    max-width: 90%;
+  }
+
+  @include breakpoint($large) {
+    max-width: 95%;
+  }
+}
+
+/* Make the main content area wider */
+.archive {
+  @include breakpoint($large) {
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
+  }
+}
+
+/* Increase max-width for single posts */
+.page__inner-wrap {
+  @include breakpoint($medium) {
+    max-width: 100%;
+  }
+}

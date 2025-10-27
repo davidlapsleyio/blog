@@ -1,6 +1,6 @@
 ---
 title: "The Enterprise AI Infrastructure Stack: From Proof of Concept to Production"
-date: 2025-10-27
+date: 2024-10-27
 layout: single
 author_profile: true
 read_time: true
