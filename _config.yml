@@ -1,9 +1,67 @@
-author: David Lapsley
-title: davidlapsley.io
+# Site Settings
+title: @davidlapsleyio
+email: davidlapsleyio@gmail.com
 description: My personal blog site
-remote_theme: pages-themes/midnight@v0.2.0
+url: https://blog.davidlapsley.io
+baseurl: "blog.davidlapsley.io"
+
+# Theme Settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Author
+author:
+  name: David Lapsley
+  avatar: # path to avatar image
+  bio: # short bio
+  location:
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.davidlapsley.io"
+
+# Reading Files
+include:
+  - _pages
+
+# Plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-sidebar:
-- about
-url: https://davidlapsley.io
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
