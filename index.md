@@ -1,16 +1,23 @@
 ---
 layout: splash
-author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
 excerpt: "Building Enterprise AI Infrastructure That Actually Works"
 ---
 
+# David Lapsley, Ph.D.
+{: .text-center}
+
+**CTO, [ActualyzeAI](https://www.actualyze.ai)**
+{: .text-center}
+
+---
+
 ## Welcome!
 {: .text-center}
 
-Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, and now as CTO of ActualyzeAI, I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
+Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, and now as CTO of [ActualyzeAI](https://www.actualyze.ai), I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
 {: .text-center}
 
 **Why 87% of AI projects fail isn't a technical problem—it's a planning problem. Let's fix that.**
