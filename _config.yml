@@ -3,7 +3,7 @@ title: "@davidlapsleyio"
 email: davidlapsleyio@gmail.com
 description: My personal blog site
 url: https://blog.davidlapsley.io
-baseurl: "blog.davidlapsley.io"
+baseurl: ""
 
 # Theme Settings
 remote_theme: mmistakes/minimal-mistakes@4.27.3
