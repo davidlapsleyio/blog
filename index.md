@@ -12,8 +12,6 @@ excerpt: "Building Enterprise AI Infrastructure That Actually Works"
 **CTO, [ActualyzeAI](https://www.actualyze.ai)**
 {: .text-center}
 
----
-
 ## Welcome!
 {: .text-center}
 
@@ -23,9 +21,8 @@ Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, an
 **Why 87% of AI projects fail isn't a technical problem—it's a planning problem. Let's fix that.**
 {: .notice--primary .text-center}
 
----
-
 ## Current Projects
+---
 
 ### NVIDIA DGX Spark Hardware Research
 Comparing NVIDIA's integrated AI platform ($3,999) against DIY open-source GPU infrastructure. 8-week testing series covering setup time, performance, cost, and developer experience.
@@ -43,9 +40,8 @@ Monthly meetups bringing together CTOs, platform engineers, and business leaders
 [Meetup Group](https://www.meetup.com/enterprise-ai-community/){: .btn .btn--primary}
 [Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA){: .btn .btn--success}
 
----
-
 ## Featured Topics
+---
 
 ### Enterprise AI Infrastructure
 Production deployment patterns, Kubernetes for AI workloads, GPU cost optimization, hybrid cloud architectures, and infrastructure that scales from POC to production.
@@ -59,9 +55,8 @@ GPU utilization strategies, spot instance management, resource allocation, charg
 ### MLOps & Platform Engineering
 KServe, KubeFlow, model serving, CI/CD for ML, monitoring, multi-tenancy patterns, and building production-grade AI platforms.
 
----
-
 ## Upcoming Content
+---
 
 ### November 2025: Hands-On KServe Workshop
 Step-by-step guide to deploying production AI infrastructure with KServe in 60 minutes. Complete deployment automation scripts and Kubernetes manifests included.
@@ -73,9 +68,8 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 - GPU-accelerated InferenceService deployment
 - Monitoring with Prometheus, Grafana, and DCGM
 
----
-
 ## About Me
+---
 
 **Current:** CTO at ActualyzeAI, helping enterprises deploy AI infrastructure that works in production, not just in proofs of concept.
 
@@ -93,9 +87,8 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 - Hybrid cloud and multi-cloud strategies
 - Engineering leadership and team scaling
 
----
-
 ## Connect
+---
 
 - **LinkedIn:** [/in/davidlapsley](https://linkedin.com/in/davidlapsley)
 - **Community Slack:** [Enterprise AI Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA)
