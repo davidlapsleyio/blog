@@ -22,7 +22,6 @@ Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, an
 {: .notice--primary .text-center}
 
 ## Current Projects
----
 
 ### NVIDIA DGX Spark Hardware Research
 Comparing NVIDIA's integrated AI platform ($3,999) against DIY open-source GPU infrastructure. 8-week testing series covering setup time, performance, cost, and developer experience.
@@ -41,7 +40,6 @@ Monthly meetups bringing together CTOs, platform engineers, and business leaders
 [Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA){: .btn .btn--success}
 
 ## Featured Topics
----
 
 ### Enterprise AI Infrastructure
 Production deployment patterns, Kubernetes for AI workloads, GPU cost optimization, hybrid cloud architectures, and infrastructure that scales from POC to production.
@@ -56,7 +54,6 @@ GPU utilization strategies, spot instance management, resource allocation, charg
 KServe, KubeFlow, model serving, CI/CD for ML, monitoring, multi-tenancy patterns, and building production-grade AI platforms.
 
 ## Upcoming Content
----
 
 ### November 2025: Hands-On KServe Workshop
 Step-by-step guide to deploying production AI infrastructure with KServe in 60 minutes. Complete deployment automation scripts and Kubernetes manifests included.
@@ -67,35 +64,3 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 - KServe deployment and configuration
 - GPU-accelerated InferenceService deployment
 - Monitoring with Prometheus, Grafana, and DCGM
-
-## About Me
----
-
-**Current:** CTO at ActualyzeAI, helping enterprises deploy AI infrastructure that works in production, not just in proofs of concept.
-
-**Previously:**
-- Director, Network Fabric Controllers at AWS
-- VP Engineering, Corelight
-- Director at Cisco, Cisco Container Platform, DNA Center Maglev Platform, Contiv.io
-- 25+ years scaling infrastructure platforms and engineering teams
-
-**Expertise:**
-- Enterprise AI infrastructure architecture
-- Kubernetes at scale
-- Production ML/AI deployment patterns
-- GPU cost optimization and resource management
-- Hybrid cloud and multi-cloud strategies
-- Engineering leadership and team scaling
-
-## Connect
----
-
-- **LinkedIn:** [/in/davidlapsley](https://linkedin.com/in/davidlapsley)
-- **Community Slack:** [Enterprise AI Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA)
-- **Meetup:** [meetup.com/enterprise-ai-community](https://meetup.com/enterprise-ai-community)
-- **Email:** davidlapsleyio@gmail.com
-
-**Thank you for visiting!** Whether you're wrestling with GPU costs, navigating compliance requirements, or trying to get your first model to production, there's something here for you.
-
-The 87% who fail try to find the perfect architecture. The 13% who succeed make deliberate trade-offs and ship production models. **Let's be in the 13%.**
-{: .notice--success .text-center}
