@@ -18,8 +18,6 @@ Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, an
 
 ---
 
-## Featured Content
-
 ## Current Projects
 
 ### NVIDIA DGX Spark Hardware Research
@@ -35,8 +33,6 @@ Monthly meetups bringing together CTOs, platform engineers, and business leaders
 **Join the community:**
 - [Meetup Group](https://www.meetup.com/enterprise-ai-community/)
 - [Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA)
-
-[View 12-month event syllabus →](community-docs/12-month-syllabus.md)
 
 ---
 
@@ -67,8 +63,6 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 - KServe deployment and configuration
 - GPU-accelerated InferenceService deployment
 - Monitoring with Prometheus, Grafana, and DCGM
-
-[View workshop details →](topics/kserve-hands-on-workshop/)
 
 ---
 
