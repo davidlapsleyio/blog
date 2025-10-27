@@ -20,6 +20,16 @@ Hi, I'm David! With decades of experience building and managing infrastructure p
 Why 87% of AI projects fail—and the proven infrastructure patterns that help you be in the 13% that succeed. [Watch more videos →](/videos/)
 {: .notice}
 
+## Recent Posts
+
+<div class="entries-list">
+  {% for post in site.posts limit:3 %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
+
+[View all posts →](/posts/){: .btn .btn--primary}
+
 ## Current Projects
 
 ### NVIDIA DGX Spark Hardware Research
