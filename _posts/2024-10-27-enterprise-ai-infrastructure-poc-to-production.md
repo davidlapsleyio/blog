@@ -26,6 +26,11 @@ header:
 
 **Why 87% of AI Projects Fail—And How to Be in the 13% That Succeed**
 
+**Prefer video?** Watch the complete presentation below, or continue reading for the full deep-dive.
+{: .notice--info}
+
+{% include video id="9cDnHMIWsMQ" provider="youtube" %}
+
 ## The Customer Problem: When Success Becomes Failure
 
 Picture this: Your data science team just delivered an impressive proof of concept. The model predicts customer churn with 91% accuracy. Leadership is excited. The business case looks solid. You've got budget approval. Everyone's ready to deploy.

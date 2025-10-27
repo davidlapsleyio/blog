@@ -2,5 +2,7 @@
 main:
   - title: "Posts"
     url: /posts/
+  - title: "Videos"
+    url: /videos/
   - title: "About"
     url: /about/

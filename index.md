@@ -6,10 +6,19 @@ author_profile: true
 
 ## Welcome!
 
-Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, and now as CTO of [ActualyzeAI](https://www.actualyze.ai), I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
+Hi, I'm David! With decades of experience building and managing infrastructure platforms at AWS, Cisco, Startups, and now as CTO of [ActualyzeAI](https://www.actualyze.ai), I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
 
-**Why 87% of AI projects fail isn't a technical problem—it's a planning problem. Let's fix that.**
+**Why 87% of AI projects fail isn't a technical problem (it's a planning problem). Let's fix that.**
 {: .notice--primary}
+
+## Latest Video
+
+### Enterprise AI Infrastructure 101: From POC to Production
+
+{% include video id="9cDnHMIWsMQ" provider="youtube" %}
+
+Why 87% of AI projects fail—and the proven infrastructure patterns that help you be in the 13% that succeed. [Watch more videos →](/videos/)
+{: .notice}
 
 ## Current Projects
 
