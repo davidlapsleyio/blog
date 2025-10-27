@@ -1,27 +1,33 @@
 ---
-layout: home
+layout: splash
 author_profile: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+excerpt: "Building Enterprise AI Infrastructure That Actually Works"
 ---
 
 # David Lapsley, Ph.D.
 **CTO, ActualyzeAI**
 
-*Building Enterprise AI Infrastructure That Actually Works*
-
 ---
 
 ## Welcome!
+{: .text-center}
 
 Hi, I'm Dave! With 25+ years building infrastructure platforms at AWS, Cisco, and now as CTO of ActualyzeAI, I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
+{: .text-center}
 
 **Why 87% of AI projects fail isn't a technical problem—it's a planning problem. Let's fix that.**
+{: .notice--primary .text-center}
 
 ---
 
 ## Current Projects
 
 ### NVIDIA DGX Spark Hardware Research
-Comparing NVIDIA's integrated AI platform ($3,500) against DIY open-source GPU infrastructure. 8-week testing series covering setup time, performance, cost, and developer experience.
+Comparing NVIDIA's integrated AI platform ($3,999) against DIY open-source GPU infrastructure. 8-week testing series covering setup time, performance, cost, and developer experience.
 
 **Topics:** Hardware comparison, model serving, local AI infrastructure
 
@@ -29,10 +35,12 @@ Comparing NVIDIA's integrated AI platform ($3,500) against DIY open-source GPU i
 Monthly meetups bringing together CTOs, platform engineers, and business leaders to discuss production AI infrastructure challenges.
 
 **Next Event:** November 14, 2025 - "Hands-On: Building Production AI Infrastructure with KServe"
+{: .notice--info}
 
 **Join the community:**
-- [Meetup Group](https://www.meetup.com/enterprise-ai-community/)
-- [Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA)
+
+[Meetup Group](https://www.meetup.com/enterprise-ai-community/){: .btn .btn--primary}
+[Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA){: .btn .btn--success}
 
 ---
 
@@ -95,4 +103,5 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 
 **Thank you for visiting!** Whether you're wrestling with GPU costs, navigating compliance requirements, or trying to get your first model to production, there's something here for you.
 
-The 87% who fail try to find the perfect architecture. The 13% who succeed make deliberate trade-offs and ship production models. Let's be in the 13%.
+The 87% who fail try to find the perfect architecture. The 13% who succeed make deliberate trade-offs and ship production models. **Let's be in the 13%.**
+{: .notice--success .text-center}
