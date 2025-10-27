@@ -11,14 +11,17 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Author
 author:
-  name: David Lapsley
+  name: "David Lapsley, Ph.D."
   avatar: # path to avatar image
-  bio: # short bio
+  bio: "CTO, [ActualyzeAI](https://www.actualyze.ai)"
   location:
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://blog.davidlapsley.io"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/davidlapsley"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:davidlapsleyio@gmail.com"
 
 # Reading Files
 include:

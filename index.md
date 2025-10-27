@@ -4,13 +4,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg
 excerpt: "Building Enterprise AI Infrastructure That Actually Works"
----
-
-# David Lapsley, Ph.D.
-**CTO, ActualyzeAI**
-
 ---
 
 ## Welcome!
