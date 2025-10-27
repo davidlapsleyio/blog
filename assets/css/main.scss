@@ -7,45 +7,36 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom width overrides */
+/* Increase main content width by 50% */
+/* Reduce sidebar space to give more room to content */
 .page {
   @include breakpoint($large) {
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    float: left;
+    width: calc(100% - 133px) !important; /* reduced from 200px sidebar */
+    padding-right: 133px !important;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    width: calc(100% - 200px) !important; /* reduced from 300px sidebar */
+    padding-right: 200px !important;
   }
 }
 
+.sidebar {
+  @include breakpoint($large) {
+    width: 133px !important; /* reduced from 200px */
+  }
+
+  @include breakpoint($x-large) {
+    width: 200px !important; /* reduced from 300px */
+  }
+}
+
+/* Increase max-width of content elements by 50% */
 .page__content {
-  @include breakpoint($medium) {
-    max-width: 90%;
-  }
-
-  @include breakpoint($large) {
-    max-width: 95%;
-  }
-}
-
-/* Make the main content area wider */
-.archive {
-  @include breakpoint($large) {
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
-  }
-}
-
-/* Increase max-width for single posts */
-.page__inner-wrap {
-  @include breakpoint($medium) {
-    max-width: 100%;
+  p, li, dl {
+    @include breakpoint($medium) {
+      max-width: 75em !important; /* increased from 50em (default) */
+    }
   }
 }
