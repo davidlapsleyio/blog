@@ -6,7 +6,7 @@ url: https://blog.davidlapsley.io
 baseurl: "blog.davidlapsley.io"
 
 # Theme Settings
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes@4.27.3
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Author
@@ -32,6 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Archives
 category_archive:
