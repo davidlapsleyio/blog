@@ -941,20 +941,14 @@ Kubernetes namespaces make this simple. Every workload runs in a namespace. Ever
 - **Storage used** (models, datasets, training checkpoints)
 - **Network egress** (moving data out of your data center or cloud region)
 
-![Cost Allocation Dashboard](/assets/images/2025-10-27-enterprise-ai-infrastructure/10-cost-dashboard.png)
 
 ### Example Monthly Report
 
-Here's real numbers from a 50-GPU shared cluster:
+Here's an example monthly report from a 50-GPU shared cluster:
 
-| Team | GPU-Hours | Cost | % of Total |
-|------|-----------|------|------------|
-| Finance | 5,760 | $22,176 | 35% |
-| Marketing | 3,840 | $14,784 | 23% |
-| Research | 8,640 | $33,264 | 42% |
-| **TOTAL** | **18,240** | **$70,224** | **100%** |
+![Cost Allocation Dashboard](/assets/images/2025-10-27-enterprise-ai-infrastructure/10-cost-dashboard.png)
 
-*(Based on average A100 GPU cost of $3.85/hour—calculated as the mean of AWS $4.10/hr, Azure $4.10/hr, and GCP $3.67/hr on-demand pricing)*
+(Cost based on average A100 GPU cost of $3.85/hour—calculated as the mean of AWS $4.10/hr, Azure $4.10/hr, and GCP $3.67/hr on-demand pricing)*
 
 **What this tells you:**
 
