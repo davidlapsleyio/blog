@@ -69,20 +69,9 @@ This article shares battle-tested patterns from AWS, Cisco, and production AI de
 
 Let's be brutally specific about what changes when you move from POC to production. This isn't abstract—this is the work that someone forgot to budget when they approved the POC:
 
-| POC | Production |
-|-----|------------|
-| Laptop or single GPU | GPU cluster or cloud infrastructure |
-| Sample dataset (GB) | Full production data (TB-PB) |
-| Best-effort latency | SLA: <200ms, 99.9% uptime |
-| Developer access only | Multi-team, multi-tenant platform |
-| No audit trail | Complete audit logging |
-| Ad-hoc model updates | CI/CD pipeline, versioning |
-| No compliance review | HIPAA/SOX/GDPR certification |
-| No cost monitoring | Chargeback, cost allocation |
+![POC vs Production Gap](/assets/images/2025-10-27-enterprise-ai-infrastructure/01-poc-vs-production-gap.png)
 
 Every single line in this table represents unbudgeted work. Now multiply each line by weeks or months of effort.
-
-![POC vs Production Gap](/assets/images/2025-10-27-enterprise-ai-infrastructure/01-poc-vs-production-gap.png)
 
 ### The Healthcare AI Pattern: How $5K Becomes $200K
 
