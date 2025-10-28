@@ -24,7 +24,7 @@ header:
   teaser: /assets/images/2025-10-27-enterprise-ai-infrastructure/01-poc-vs-production-gap.png
 ---
 
-**Why 87% of AI Projects Fail—And How to Be in the 13% That Succeed**
+**Why 87% of AI Projects Fail (And How to Be in the 13% That Succeed)**
 
 **Prefer video?** Watch the complete presentation below, or continue reading for the full deep-dive.
 {: .notice--info}
@@ -64,11 +64,13 @@ And here's the punch line: According to [Algorithmia's State of Enterprise ML Su
 
 ## Why This Article Exists
 
-I've spent 25 years building infrastructure platforms at massive scale. At AWS, I directed the largest network fabric in Amazon's history—over 100 datacenters supporting AI workloads. At Cisco, I led the Kubernetes-based platform that powered a $1B product and supported 800+ engineers. I've scaled teams from 10 to 90+ engineers multiple times.
-
-Now, as CTO at ActualyzeAI, I work with enterprises navigating exactly these challenges: getting AI from proof of concept to production without becoming part of that 87%.
-
-This article shares battle-tested patterns from AWS, Cisco, and production AI deployments at scale. Not theory. What actually works.
+I've spent decades building and managing infrastructure platforms
+at AWS, Cisco, and numerous Startups. Now as CTO of ActualyzeAI,
+I help enterprises navigate the journey from AI proof-of-concept to
+production deployment.  This blog shares battle-tested patterns, and
+practical strategies for the 13% of AI projects that actually make it
+to production.  The examples provided are composites based on typical
+challenges enterprises face. Not Theory. What actually works.
 
 ## The Gap Between POC and Production: Eight Dimensions You Didn't Budget For
 
