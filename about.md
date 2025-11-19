@@ -15,13 +15,14 @@ author_profile: true
 
 **Previously:**
 - Director, AWS (AWS Intent Driven Networks, Network Fabric Controllers)
-- VP Engineering, Corelight
+- VP Engineering, Corelight (Network Intrusion Detection Appliances)
 - Director, Cisco (Cisco Container Platform, DNA Center Maglev Platform, Contiv.io)
-- VP Engineering, Metacloud (Managed Openstack as a Services (acquired by Cisco)
-- 25+ years scaling infrastructure platforms and engineering teams
+- VP Engineering, Metacloud (Managed Openstack as a Service -- acquired by Cisco)
+- Decades of experience scaling infrastructure platforms and engineering teams
 
 ## Expertise
 
+- Large scale Platform Engineering
 - Enterprise AI infrastructure architecture
 - Kubernetes at scale
 - Production ML/AI deployment patterns
