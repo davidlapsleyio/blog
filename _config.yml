@@ -1,12 +1,19 @@
 # Site Settings
 title: "@davidlapsleyio"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-FDNSMGTHBN"
 email: davidlapsleyio@gmail.com
 description: My personal blog site
 url: https://blog.davidlapsley.io
 baseurl: ""
 
 # Theme Settings
-remote_theme: mmistakes/minimal-mistakes@4.27.3
+# remote_theme: mmistakes/minimal-mistakes@4.27.3
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Author
