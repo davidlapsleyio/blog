@@ -92,21 +92,20 @@ Our directory structure looks like this:
 
 ```
 your-project/
-├── .kiro/
-│   └── specs/
-│       ├── README.md
-│       ├── mage-build-system/
-│       │   ├── requirements.md
-│       │   ├── design.md
-│       │   └── tasks.md
-│       ├── authentication-middleware/
-│       │   ├── requirements.md
-│       │   ├── design.md
-│       │   └── tasks.md
-│       └── control-plane-health-endpoints/
-│           ├── requirements.md
-│           ├── design.md
-│           └── tasks.md
+├── specs/
+│   ├── README.md
+│   ├── mage-build-system/
+│   │   ├── requirements.md
+│   │   ├── design.md
+│   │   └── tasks.md
+│   ├── authentication-middleware/
+│   │   ├── requirements.md
+│   │   ├── design.md
+│   │   └── tasks.md
+│   └── control-plane-health-endpoints/
+│       ├── requirements.md
+│       ├── design.md
+│       └── tasks.md
 ├── internal/
 ├── cmd/
 └── test/
