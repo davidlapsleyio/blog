@@ -23,7 +23,7 @@ tags:
   - workflow
 ---
 
-*15-minute read. Written in the working-backwards narrative style we use for launch docs.*
+Written in the working-backwards narrative style we use for launch docs.*
 
 ## Press Release (Day 1)
 
