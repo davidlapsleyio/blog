@@ -4,14 +4,17 @@
 
 @charset "utf-8";
 
-/* Import DM Sans font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* Import Inter and JetBrains Mono from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
-/* Override font variables to use DM Sans */
-$dm-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$sans-serif: $dm-sans;
+/* Override font variables */
+$inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$jetbrains-mono: 'JetBrains Mono', 'Courier New', Courier, monospace;
+$sans-serif: $inter;
 $global-font-family: $sans-serif;
 $header-font-family: $sans-serif;
+$monospace: $jetbrains-mono;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -48,4 +51,33 @@ $header-font-family: $sans-serif;
       max-width: 75em !important; /* increased from 50em (default) */
     }
   }
+}
+
+/* Typography enhancements */
+:root {
+  --font-family: Inter, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'rlig' 1, 'calt' 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+code, pre, kbd, samp {
+  font-family: $jetbrains-mono;
+  font-size: 0.9em;
+}
+
+button, .btn {
+  font-weight: 600;
 }
