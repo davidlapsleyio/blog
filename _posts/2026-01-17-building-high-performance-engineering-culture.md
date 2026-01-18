@@ -20,11 +20,11 @@ tags:
   - tenets
 ---
 
-Every high-performance engineering team needs a foundation. Not the technical stack—that's the easy part. The foundation that matters is shared understanding of mission, vision, and how the team works together. Without this, you get talented engineers pulling in different directions, making inconsistent decisions, and creating friction where there should be alignment.
+Every high-performance engineering team needs a foundation. Not the technical stack-that's the easy part. The foundation that matters is shared understanding of mission, vision, and how the team works together. Without this, you get talented engineers pulling in different directions, making inconsistent decisions, and creating friction where there should be alignment.
 
 I've built teams at AWS, Cisco, and startups. The pattern that works consistently comes from Amazon's approach: define your mission (why you exist), your vision (where you're going), and your tenets (how you work). This isn't corporate theater. It's the operating system for high-performance teams.
 
-This post explains the framework, how to apply it when forming new teams, and why three specific tenets—Customer Obsession, Earn Trust, and Have Backbone; Disagree and Commit—form the foundation of engineering excellence.
+This post explains the framework, how to apply it when forming new teams, and why three specific tenets-Customer Obsession, Earn Trust, and Have Backbone; Disagree and Commit-form the foundation of engineering excellence.
 
 ## The Amazon Framework: Mission, Vision, Tenets
 
@@ -42,7 +42,7 @@ The mission and vision provide direction. The tenets provide the operating princ
 
 Most companies have mission and vision statements. Few have tenets. That's the mistake.
 
-Mission and vision tell you where to go. Tenets tell you how to get there. When an engineer faces a decision—ship now or wait for more testing, build the simple solution or the scalable one, escalate an issue or handle it locally—tenets provide the framework for making that decision consistently with team values.
+Mission and vision tell you where to go. Tenets tell you how to get there. When an engineer faces a decision-ship now or wait for more testing, build the simple solution or the scalable one, escalate an issue or handle it locally-tenets provide the framework for making that decision consistently with team values.
 
 The key insight: **tenets are decision-making heuristics that scale culture**. You can't be in every meeting, review every decision, or guide every choice. Tenets encode your values into principles that engineers internalize and apply independently.
 
@@ -52,7 +52,7 @@ Before defining your team's tenets, it's worth understanding Amazon's Leadership
 
 Amazon has 16 Leadership Principles. Every Amazonian knows them. They're used in hiring (behavioral interviews probe for evidence of each principle), performance reviews (you're evaluated against them), and daily decisions (meetings reference them explicitly).
 
-**A critical point about priority**: At Amazon, Customer Obsession is the number one priority. The other 15 principles matter, but when they conflict with Customer Obsession, Customer Obsession wins. There is no priority ordering among the other 15—they're all important, but Customer Obsession is first.
+**A critical point about priority**: At Amazon, Customer Obsession is the number one priority. The other 15 principles matter, but when they conflict with Customer Obsession, Customer Obsession wins. There is no priority ordering among the other 15-they're all important, but Customer Obsession is first.
 
 Here are the principles most relevant to engineering teams:
 
@@ -72,19 +72,19 @@ Ownership means you're responsible for outcomes, not just outputs. You don't thr
 
 > Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here." As we do new things, we accept that we may be misunderstood for long periods of time.
 
-Engineering teams naturally gravitate toward complexity. Invent and Simplify pushes back. The best solution is often the simplest one. Innovation isn't adding features—it's solving problems in ways that make the complex simple.
+Engineering teams naturally gravitate toward complexity. Invent and Simplify pushes back. The best solution is often the simplest one. Innovation isn't adding features-it's solving problems in ways that make the complex simple.
 
 ### Are Right, A Lot
 
 > Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.
 
-This principle is often misunderstood. It's not about being right in arguments. It's about making good decisions consistently. The key phrase is "seek diverse perspectives and work to disconfirm their beliefs." Being right a lot requires intellectual humility—actively seeking evidence that you're wrong.
+This principle is often misunderstood. It's not about being right in arguments. It's about making good decisions consistently. The key phrase is "seek diverse perspectives and work to disconfirm their beliefs." Being right a lot requires intellectual humility-actively seeking evidence that you're wrong.
 
 ### Learn and Be Curious
 
 > Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
 
-Technology changes constantly. What you knew five years ago is obsolete. High-performance engineers are learning machines. They read papers, experiment with new tools, and stay current. Curiosity isn't optional—it's survival.
+Technology changes constantly. What you knew five years ago is obsolete. High-performance engineers are learning machines. They read papers, experiment with new tools, and stay current. Curiosity isn't optional-it's survival.
 
 ### Hire and Develop the Best
 
@@ -94,15 +94,15 @@ Every hire either raises or lowers the bar. There's no neutral. High-performance
 
 ### Insist on the Highest Standards
 
-> Leaders have relentlessly high standards — many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services, and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
+> Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services, and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
 
-This is the principle that separates good teams from great ones. High standards aren't about perfection—they're about not accepting mediocrity. Code reviews matter. Tests matter. Documentation matters. Operational excellence matters. You don't ship broken code because you're behind schedule.
+This is the principle that separates good teams from great ones. High standards aren't about perfection-they're about not accepting mediocrity. Code reviews matter. Tests matter. Documentation matters. Operational excellence matters. You don't ship broken code because you're behind schedule.
 
 ### Think Big
 
 > Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
 
-Small thinking produces small results. High-performance teams think big—not recklessly, but ambitiously. What would 10x better look like? What would delight customers? What would change the game?
+Small thinking produces small results. High-performance teams think big-not recklessly, but ambitiously. What would 10x better look like? What would delight customers? What would change the game?
 
 ### Bias for Action
 
@@ -132,7 +132,7 @@ You can't lead effectively from 30,000 feet. Dive Deep means you understand the 
 
 > Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
 
-This is the principle that enables high-velocity decision-making. You argue your position vigorously. You bring data. You challenge assumptions. But once the decision is made, you commit completely—even if you disagreed. No "I told you so." No undermining. Full commitment.
+This is the principle that enables high-velocity decision-making. You argue your position vigorously. You bring data. You challenge assumptions. But once the decision is made, you commit completely-even if you disagreed. No "I told you so." No undermining. Full commitment.
 
 ### Deliver Results
 
@@ -144,7 +144,7 @@ Results matter. Not activity, not effort, not intentions. Results. High-performa
 
 > Leaders work every day to create a safer, more productive, higher performing, more diverse, and more just work environment. They lead with empathy, have fun at work, and make it easy for others to have fun. Leaders ask themselves: Are my fellow employees growing? Are they empowered? Are they ready for what's next? Leaders have a vision for and commitment to their employees' personal success, whether that be at Amazon or elsewhere.
 
-Great teams take care of their people. You create an environment where people grow, feel valued, and do their best work. This isn't soft—it's strategic. The best people have options. They stay where they're growing and valued.
+Great teams take care of their people. You create an environment where people grow, feel valued, and do their best work. This isn't soft-it's strategic. The best people have options. They stay where they're growing and valued.
 
 ### Success and Scale Bring Broad Responsibility
 
@@ -164,9 +164,9 @@ Most tenets should end with an implicit "unless you know better." This phrase is
 
 Tenets are heuristics, not laws. They guide decisions in the absence of better information. When you have specific knowledge that contradicts a tenet, you're empowered to make the right decision.
 
-**Example**: Your tenet is "Bias for Action—ship fast and iterate." But you're building a payment processing system where bugs mean financial loss. You know better. You slow down, add extensive testing, and ship carefully.
+**Example**: Your tenet is "Bias for Action-ship fast and iterate." But you're building a payment processing system where bugs mean financial loss. You know better. You slow down, add extensive testing, and ship carefully.
 
-**Example**: Your tenet is "Invent and Simplify—choose the simplest solution." But you're building a system that will scale to millions of users, and the simple solution won't scale. You know better. You build the more complex, scalable solution.
+**Example**: Your tenet is "Invent and Simplify-choose the simplest solution." But you're building a system that will scale to millions of users, and the simple solution won't scale. You know better. You build the more complex, scalable solution.
 
 The phrase "unless you know better" prevents tenets from becoming dogma. It empowers engineers to use judgment. It acknowledges that context matters.
 
@@ -223,7 +223,7 @@ Every engineering team should start with Customer Obsession. It's the foundation
 
 Trust is the foundation of high-performance teams. Without trust, you get politics, CYA behavior, and information hoarding. With trust, you get candor, collaboration, and speed.
 
-**Why it matters**: Engineering is collaborative. Code reviews, design discussions, incident response, on-call rotations—all require trust. When trust is high, teams move fast because they don't waste energy on politics. When trust is low, everything takes longer.
+**Why it matters**: Engineering is collaborative. Code reviews, design discussions, incident response, on-call rotations-all require trust. When trust is high, teams move fast because they don't waste energy on politics. When trust is low, everything takes longer.
 
 **What it looks like in practice**:
 - Engineers admit mistakes openly: "I broke production, here's what happened"
@@ -299,11 +299,11 @@ For each tenet, define:
 - We ask "how does this help customers ship faster/safer/better?"
 
 **What it doesn't mean**:
-- It doesn't mean we ignore technical excellence—we need both
-- It doesn't mean we build everything customers ask for—we work backwards from needs, not requests
+- It doesn't mean we ignore technical excellence-we need both
+- It doesn't mean we build everything customers ask for-we work backwards from needs, not requests
 - It doesn't mean we sacrifice long-term architecture for short-term wins
 
-**When you know better**: You're building foundational infrastructure (like a new consensus protocol) that has no immediate customer impact but enables future capabilities. You know better—invest in the foundation.
+**When you know better**: You're building foundational infrastructure (like a new consensus protocol) that has no immediate customer impact but enables future capabilities. You know better-invest in the foundation.
 
 ### Example: Have Backbone; Disagree and Commit for a Distributed Systems Team
 
@@ -319,11 +319,11 @@ For each tenet, define:
 - We revisit decisions only when new information emerges
 
 **What it doesn't mean**:
-- It doesn't mean we argue endlessly—there's a decision point
-- It doesn't mean we're disagreeable—we're respectful and data-driven
-- It doesn't mean decisions are permanent—we can revisit with new information
+- It doesn't mean we argue endlessly-there's a decision point
+- It doesn't mean we're disagreeable-we're respectful and data-driven
+- It doesn't mean decisions are permanent-we can revisit with new information
 
-**When you know better**: The decision was made, but you discover a critical security vulnerability in the chosen approach. You know better—escalate immediately and reopen the decision.
+**When you know better**: The decision was made, but you discover a critical security vulnerability in the chosen approach. You know better-escalate immediately and reopen the decision.
 
 ## Operationalizing Tenets
 
@@ -345,11 +345,11 @@ Hire people who demonstrate these behaviors. One person who violates tenets can 
 
 Reference tenets explicitly in meetings:
 
-- "Let's apply Customer Obsession here—what does the customer actually need?"
-- "I'm invoking Have Backbone—I disagree with this approach, and here's why"
-- "This is an Earn Trust moment—let's be candid about the risks"
+- "Let's apply Customer Obsession here-what does the customer actually need?"
+- "I'm invoking Have Backbone-I disagree with this approach, and here's why"
+- "This is an Earn Trust moment-let's be candid about the risks"
 
-This reinforces that tenets aren't wall art—they're decision-making tools.
+This reinforces that tenets aren't wall art-they're decision-making tools.
 
 ### 3. Performance Reviews
 
@@ -359,15 +359,15 @@ Evaluate engineers against tenets, not just technical skills. An engineer who sh
 
 When things go wrong, ask which tenet was violated:
 
-- "We shipped a feature customers didn't want—did we violate Customer Obsession?"
-- "The incident response was chaotic—did we violate Earn Trust by not being candid about the severity?"
-- "We debated the architecture for three weeks—did we violate Have Backbone; Disagree and Commit?"
+- "We shipped a feature customers didn't want-did we violate Customer Obsession?"
+- "The incident response was chaotic-did we violate Earn Trust by not being candid about the severity?"
+- "We debated the architecture for three weeks-did we violate Have Backbone; Disagree and Commit?"
 
 This turns failures into learning opportunities about culture, not just technical issues.
 
 ### 5. Onboarding
 
-New team members should learn tenets on day one. Explain each tenet, give examples, and show how they guide decisions. Make it clear that tenets aren't suggestions—they're how this team operates.
+New team members should learn tenets on day one. Explain each tenet, give examples, and show how they guide decisions. Make it clear that tenets aren't suggestions-they're how this team operates.
 
 ## Common Mistakes
 
@@ -377,7 +377,7 @@ More isn't better. Three to five tenets is optimal. More than that and people ca
 
 ### Mistake 2: Generic Tenets
 
-"Work hard" and "be collaborative" aren't tenets—they're platitudes. Tenets should be specific to your team's context and challenges.
+"Work hard" and "be collaborative" aren't tenets-they're platitudes. Tenets should be specific to your team's context and challenges.
 
 ### Mistake 3: Stating the Obvious
 
@@ -385,7 +385,7 @@ If your team already does something well, don't make it a tenet. Tenets should e
 
 ### Mistake 4: Writing Tenets and Forgetting Them
 
-Tenets on a wiki that nobody reads are worthless. Tenets must be lived—referenced in meetings, used in decisions, evaluated in reviews.
+Tenets on a wiki that nobody reads are worthless. Tenets must be lived-referenced in meetings, used in decisions, evaluated in reviews.
 
 ### Mistake 5: Tenets Without Teeth
 
@@ -425,9 +425,9 @@ If your team doesn't have tenets, propose them. You don't need to be a manager t
 Start with the three essentials: Customer Obsession, Earn Trust, Have Backbone; Disagree and Commit. Write a one-pager explaining why these matter for your team. Share it with your manager and teammates.
 
 If your team has tenets but doesn't live them, call it out:
-- "Our tenet is Customer Obsession—are we starting with the customer here?"
-- "Our tenet is Earn Trust—let's be candid about the risks"
-- "Our tenet is Disagree and Commit—I disagree, but I'll commit once we decide"
+- "Our tenet is Customer Obsession-are we starting with the customer here?"
+- "Our tenet is Earn Trust-let's be candid about the risks"
+- "Our tenet is Disagree and Commit-I disagree, but I'll commit once we decide"
 
 Culture is everyone's responsibility. You don't need permission to live the tenets.
 

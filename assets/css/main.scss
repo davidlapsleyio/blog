@@ -4,80 +4,101 @@
 
 @charset "utf-8";
 
-/* Import Inter and JetBrains Mono from Google Fonts */
+/* Modern professional fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* Override font variables */
-$inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-$jetbrains-mono: 'JetBrains Mono', 'Courier New', Courier, monospace;
-$sans-serif: $inter;
+/* Font variables */
+$sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$monospace: "JetBrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $global-font-family: $sans-serif;
 $header-font-family: $sans-serif;
-$monospace: $jetbrains-mono;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Increase main content width by 50% */
-/* Reduce sidebar space to give more room to content */
-.page {
-  @include breakpoint($large) {
-    float: left;
-    width: calc(100% - 133px) !important; /* reduced from 200px sidebar */
-    padding-right: 133px !important;
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - 200px) !important; /* reduced from 300px sidebar */
-    padding-right: 200px !important;
-  }
-}
-
-.sidebar {
-  @include breakpoint($large) {
-    width: 133px !important; /* reduced from 200px */
-  }
-
-  @include breakpoint($x-large) {
-    width: 200px !important; /* reduced from 300px */
-  }
-}
-
-/* Increase max-width of content elements by 50% */
-.page__content {
-  p, li, dl {
-    @include breakpoint($medium) {
-      max-width: 75em !important; /* increased from 50em (default) */
-    }
-  }
-}
-
-/* Typography enhancements */
-:root {
-  --font-family: Inter, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-size-base: 16px;
-  --line-height-base: 1.5;
-}
-
+/* Professional typography enhancements */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'rlig' 1, 'calt' 1;
+  font-feature-settings: 'kern' 1, 'liga' 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-code, pre, kbd, samp {
-  font-family: $jetbrains-mono;
-  font-size: 0.9em;
+/* Better heading hierarchy - make levels more distinct */
+h2 {
+  font-size: 1.563em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
 }
 
-button, .btn {
+h3 {
+  font-size: 1.25em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
   font-weight: 600;
 }
+
+h4 {
+  font-size: 1.125em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: $monospace;
+}
+
+/* Modern post title styling - lighter, no underline */
+.archive__item-title {
+  font-weight: 500 !important;
+  border-bottom: none !important;
+  margin-bottom: 0.5em !important;
+}
+
+.archive__item-title a {
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  text-decoration: none !important;
+  color: #0066cc !important;
+}
+
+/* Fix notice box text size */
+.notice,
+.notice--primary,
+.notice--info,
+.notice--warning,
+.notice--success,
+.notice--danger {
+  font-size: 1em !important;
+}
+
+.notice p,
+.notice--primary p,
+.notice--info p,
+.notice--warning p,
+.notice--success p,
+.notice--danger p {
+  font-size: 1em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

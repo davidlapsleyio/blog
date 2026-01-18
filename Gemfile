@@ -1,6 +1,20 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# Use latest Jekyll instead of github-pages
+gem "jekyll", "~> 4.3"
+gem "minimal-mistakes-jekyll", "~> 4.27"
+
+# Ruby 3.x+ removed these from stdlib
+gem "csv"
+gem "bigdecimal"
+gem "base64"
+gem "logger"
+gem "rexml"
+gem "ostruct"
+gem "webrick"
+
+# Faraday retry middleware
+gem "faraday-retry"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
