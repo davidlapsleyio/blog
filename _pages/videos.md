@@ -3,28 +3,26 @@ layout: single
 title: Videos & Tutorials
 permalink: /videos/
 author_profile: true
+classes: wide
 ---
 
 ## Latest Videos
+
+<div class="video-panel" markdown="1">
 
 ### Enterprise AI Infrastructure 101: From Proof of Concept to Production
 
 {% include video id="9cDnHMIWsMQ" provider="youtube" %}
 
-**Why 87% of AI projects fail—and how to be in the 13% that succeed.**
-
-This comprehensive talk covers the complete journey from POC to production, including:
-- The gap between POC and production (8 dimensions you didn't budget for)
-- Real cost breakdowns: When $5K becomes $57K per model
-- Three proven infrastructure patterns (Hybrid, GPU Pooling, Model Optimization)
-- Architecture decision framework for enterprise AI
-- Industry-specific patterns for Healthcare, Financial Services, and Manufacturing
-
-Perfect for CTOs, platform engineers, and business leaders planning enterprise AI deployments.
+I've watched hundreds of AI projects fail—not because the technology didn't work, but because teams underestimated the gap between demo and production. This talk walks through what actually breaks: the cost explosions, compliance nightmares, and infrastructure patterns that separate the 13% who ship from the 87% who don't.
 
 [Watch on YouTube](https://youtu.be/9cDnHMIWsMQ){: .btn .btn--primary}
 
+</div>
+
 ---
+
+<div class="video-panel" markdown="1">
 
 ## Subscribe for More
 
@@ -32,7 +30,11 @@ New videos on enterprise AI infrastructure, Kubernetes for ML, cost optimization
 
 [Subscribe on YouTube](https://www.youtube.com/channel/UC548llSnKBCrqnk_NelGIJA){: .btn .btn--danger}
 
+</div>
+
 ---
+
+<div class="video-panel" markdown="1">
 
 ## Topics Covered
 
@@ -51,10 +53,16 @@ HIPAA, SOX, GDPR compliance for AI systems in regulated industries
 ### MLOps & Platform Engineering
 KServe, KubeFlow, model serving, monitoring, and production best practices
 
+</div>
+
 ---
+
+<div class="video-panel" markdown="1">
 
 ## From the Community
 
 Videos feature real-world case studies, technical deep-dives, and insights from the Tampa Bay Enterprise AI Community meetups.
 
 **Have a topic request?** [Join our Slack community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA) and let me know what you'd like to see next.
+
+</div>

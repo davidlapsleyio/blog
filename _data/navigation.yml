@@ -1,9 +1,13 @@
 # Main navigation links
 main:
+  - title: "Home"
+    url: /
   - title: "Posts"
     url: /posts/
   - title: "Videos"
     url: /videos/
+  - title: "Community"
+    url: /community/
   - title: "About"
     url: /about/
   - title: "Search"

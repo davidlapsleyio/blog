@@ -6,23 +6,32 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/hero-bg.jpg
+classes: wide
 ---
 
 ## Welcome!
 
-Hi, I'm David! With decades of experience building and managing infrastructure platforms at AWS, Cisco, Startups, and now as CTO of [ActualyzeAI](https://www.actualyze.ai), I help enterprises navigate the journey from AI proof-of-concept to production deployment. This blog shares battle-tested patterns, real-world case studies, and practical strategies for the 13% of AI projects that actually make it to production.
+Hi, I'm David. I've spent my career building production systems at AWS, Cisco, and now as CTO of [ActualyzeAI](https://www.actualyze.ai) from distributed infrastructure to AI platforms to engineering teams that ship.
 
-**Why 87% of AI projects fail isn't a technical problem (it's a planning problem). Let's fix that.**
-{: .notice--primary}
+This blog covers what I've learned building systems that actually work: **enterprise AI infrastructure**, **LLM-assisted development workflows**, **Kubernetes platforms**, **engineering culture**, and the **distributed systems patterns** that separate demos from production.
+
+Whether you're deploying AI at scale, building with LLMs, or leading engineering teams, you'll find battle-tested patterns and real-world lessons from someone who's been there.
+
+<div style="background: #f9f9f9; border-left: 4px solid #7a8288; padding: 1em; margin: 1.5em 0;">
+<strong>If you're building production systems, not just prototypes, you're in the right place.</strong>
+</div>
 
 ## Latest Video
+
+<div class="video-panel" markdown="1">
 
 ### Enterprise AI Infrastructure 101: From POC to Production
 
 {% include video id="9cDnHMIWsMQ" provider="youtube" %}
 
 Why 87% of AI projects fail—and the proven infrastructure patterns that help you be in the 13% that succeed. [Watch more videos →](/videos/)
-{: .notice}
+
+</div>
 
 ## Recent Posts
 
@@ -34,23 +43,9 @@ Why 87% of AI projects fail—and the proven infrastructure patterns that help y
 
 [View all posts →](/posts/){: .btn .btn--primary}
 
-## Current Projects
+## Join the Community
 
-### NVIDIA DGX Spark Hardware Research
-Comparing NVIDIA's integrated AI platform ($3,999) against DIY open-source GPU infrastructure. 8-week testing series covering setup time, performance, cost, and developer experience.
-
-**Topics:** Hardware comparison, model serving, local AI infrastructure
-
-### Tampa Bay Enterprise AI Community
-Monthly meetups bringing together CTOs, platform engineers, and business leaders to discuss production AI infrastructure challenges.
-
-**Next Event:** November 14, 2025 - "Hands-On: Building Production AI Infrastructure with KServe"
-{: .notice--info}
-
-**Join the community:**
-
-[Meetup Group](https://www.meetup.com/enterprise-ai-community/){: .btn .btn--primary}
-[Slack Community](https://join.slack.com/t/enterpriseaicommunity/shared_invite/zt-3fhj8evxf-q3pXrl_epEkQBTLQgEciLA){: .btn .btn--success}
+Monthly hands-on workshops and daily discussions with CTOs and platform engineers building production AI systems. [Learn more →](/community/){: .btn .btn--primary}
 
 ## Featured Topics
 
@@ -66,10 +61,16 @@ GPU utilization strategies, spot instance management, resource allocation, charg
 ### MLOps & Platform Engineering
 KServe, KubeFlow, model serving, CI/CD for ML, monitoring, multi-tenancy patterns, and building production-grade AI platforms.
 
-## Upcoming Content
+## Upcoming Event
 
-### November 2025: Hands-On KServe Workshop
-Step-by-step guide to deploying production AI infrastructure with KServe in 60 minutes. Complete deployment automation scripts and Kubernetes manifests included.
+<div class="video-panel" markdown="1">
+
+### Fast Track AI Deployment: Master KServe in an Hour!
+
+**Date:** February 5, 2026 at 7:00 PM EST  
+**Location:** Virtual event
+
+Deploy production AI infrastructure with KServe in 60 minutes. Hands-on session with automation scripts and Kubernetes manifests.
 
 **Topics covered:**
 - Kubernetes cluster + GPU Operator setup
@@ -77,3 +78,7 @@ Step-by-step guide to deploying production AI infrastructure with KServe in 60 m
 - KServe deployment and configuration
 - GPU-accelerated InferenceService deployment
 - Monitoring with Prometheus, Grafana, and DCGM
+
+[Register Now →](https://community.cncf.io/events/details/cncf-cloud-native-tampa-bay-presents-fast-track-ai-deployment-master-kserve-in-an-hour/){: .btn .btn--success}
+
+</div>
