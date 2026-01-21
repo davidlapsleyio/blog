@@ -458,4 +458,4 @@ The tools are ready. The specs are the contract. The feedback loop is the guardr
 - [GitHub Spec Kit](https://github.com/github/spec-kit) - Open-source SDLD toolkit
 - [EARS Requirements Pattern](https://alistairmavin.com/ears/) - The syntax foundation for precise requirements
 - [Property-Based Testing with gopter](https://github.com/leanovate/gopter) - Go property testing library
-- [Mage Build Tool](https://magefile.org/) - Go-based build automation
+- [Mage Build Tool](https://github.com/magefile/mage) - Go-based build automation
