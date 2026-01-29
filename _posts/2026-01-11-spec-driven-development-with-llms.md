@@ -69,7 +69,7 @@ A growing ecosystem of tools has emerged to support SDLD. Here are the major pla
 
 **[Traycer](https://traycer.ai)** takes a different approach as a workflow orchestration layer. It generates file-level detailed plans with mermaid diagrams, then hands off execution to your preferred coding agent (Cursor, Claude Code, GitHub Copilot). It also verifies that implementations adhere to the plan.
 
-**[KodeOps](https://kodeops.dev)** automates SDLD and incorporates it into a fully automated SDLC. If you're looking to scale this approach across teams or integrate it into CI/CD pipelines, KodeOps provides the infrastructure to make that happen.
+**[Actualyze](https://actualyze.dev)** automates SDLD and incorporates it into a fully automated SDLC. If you're looking to scale this approach across teams or integrate it into CI/CD pipelines, Actualyze provides the infrastructure to make that happen.
 
 **[Semcheck](https://semcheck.ai)** focuses specifically on verification-it checks whether code matches its specification. You can run it in pre-commit hooks or CI/CD pipelines to prevent implementation drift.
 
@@ -416,7 +416,7 @@ Specs aren't overhead-they're the foundation of production-grade LLM development
 
 - [AWS Kiro](https://kiro.dev) - Agentic AI IDE with SDLD support
 - [GitHub Spec Kit](https://github.com/github/spec-kit) - Open-source SDLD toolkit
-- [KodeOps](https://kodeops.dev) - Automated SDLD platform
+- [Actualyze](https://actualyze.dev) - Automated SDLD platform
 - [EARS Requirements Pattern](https://alistairmavin.com/ears/)
 - [Property-Based Testing with gopter](https://github.com/leanovate/gopter)
 - [CLEAN Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)

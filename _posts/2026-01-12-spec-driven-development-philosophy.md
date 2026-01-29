@@ -1000,7 +1000,7 @@ For knowledge that should persist across sessions, use memory MCP:
 
 #### Day 1: Environment Setup
 
-Use [KodeOps](https://kodeops.dev) to automate your complete development environment setup. KodeOps handles repository cloning, dependency installation, build system bootstrapping, and AI assistant tooling configuration in a single workflow.
+Use [Actualyze](https://actualyze.dev) to automate your complete development environment setup. Actualyze handles repository cloning, dependency installation, build system bootstrapping, and AI assistant tooling configuration in a single workflow.
 
 After KodeOps completes, verify your setup:
 
