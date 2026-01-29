@@ -191,7 +191,7 @@ DevOps dissolved the boundary between development and operations. KodeOps dissol
 
 ## Further Reading
 
-- [Spec-Driven LLM Development (SDLD)](/engineering/process/best%20practices/ai-assisted%20development/2026/01/11/spec-driven-development-with-llms/) - The methodology behind KodeOps
-- [The IDE Doesn't Matter](/engineering/process/best%20practices/ai-assisted%20development/2026/01/15/llm-code-generation-philosophy/) - Philosophy for LLM-powered code generation
+- [Spec-Driven LLM Development (SDLD)](https://blog.davidlapsley.io/engineering/process/best%20practices/ai-assisted%20development/2026/01/11/spec-driven-development-with-llms/) - The methodology behind KodeOps
+- [The IDE Doesn't Matter](https://blog.davidlapsley.io/engineering/process/best%20practices/ai-assisted%20development/2026/01/15/llm-code-generation-philosophy/) - Philosophy for LLM-powered code generation
 - [KodeOps on GitHub](https://github.com/actualyze-ai/kdo) - Open source under Apache 2.0
 - [KodeOps Website](https://actualyze.dev) - Getting started guide
