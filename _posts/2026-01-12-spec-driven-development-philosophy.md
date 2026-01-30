@@ -1136,7 +1136,7 @@ This is not about slowing down—it's about sustaining velocity. Teams that skip
 
 ### Methodology
 
-- [Easy Approach to Requirements Syntax (EARS)](https://www.iaria.org/conferences2010/filesICCGI10/Tutorial%20Slides%20ICCGI%202010%20Mavin.pdf) - The EARS format for requirements
+- [Easy Approach to Requirements Syntax (EARS)](https://alistairmavin.com/ears/) - The EARS format for requirements
 - [Property-Based Testing](https://increment.com/testing/in-praise-of-property-based-testing/) - Testing with invariants
 
 ### Tools
