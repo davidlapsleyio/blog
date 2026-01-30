@@ -25,7 +25,7 @@ tags:
 
 When you're building a platform that runs on Kubernetes, you need a local development environment that doesn't lie to you. The choice matters more than most teams realize.
 
-I've spent the last two years building a multi-cluster AI platform with a hub-spoke architecture—management services on one cluster, workload orchestration and execution on spoke clusters. During that time, I've used every major local Kubernetes framework: Minikube, Docker Desktop, Rancher Desktop, K3d, and KIND.
+When evaluating local Kubernetes frameworks for a multi-cluster AI platform with hub-spoke architecture—management services on one cluster, workload orchestration and execution on spoke clusters—I tested every major option: Minikube, Docker Desktop, Rancher Desktop, K3d, and KIND.
 
 KIND won. Not by a small margin.
 
