@@ -66,28 +66,6 @@ Real-time discussions with the Tampa Bay cloud native community. Ask questions, 
 
 </div>
 
-## Upcoming Events
-
-<div class="video-panel" markdown="1">
-
-### Fast Track AI Deployment: Master KServe in an Hour!
-
-**Date:** February 5, 2026 at 7:00 PM EST  
-**Location:** Virtual event
-
-Deploy production AI infrastructure with KServe in 60 minutes. Whether you're a seasoned pro or new to cloud native, this hands-on session equips you with automation scripts and Kubernetes manifests to supercharge your AI projects.
-
-**What we'll cover:**
-- Kubernetes cluster + GPU Operator setup
-- Istio + Knative installation
-- KServe deployment and configuration
-- GPU-accelerated InferenceService
-- Monitoring with Prometheus, Grafana, and DCGM
-
-[Register Now →](https://community.cncf.io/events/details/cncf-cloud-native-tampa-bay-presents-fast-track-ai-deployment-master-kserve-in-an-hour/){: .btn .btn--success}
-
-</div>
-
 ## What We Cover
 
 - **Kubernetes** fundamentals through advanced production patterns
@@ -120,6 +98,16 @@ This is a practitioner community. Vendors are welcome to participate, but this i
 87% of AI projects fail. Let's talk about why and how to be in the 13% that succeed.
 
 ## Past Events
+
+<div class="video-panel" markdown="1">
+
+### Fast Track AI Deployment: Master KServe in an Hour!
+
+Production AI inference infrastructure with KServe — deploying Kubernetes, Istio, Knative, and monitoring in 60 minutes using kFabric.
+
+[Watch Recording →](https://youtu.be/eZAELyls_Lg){: .btn .btn--primary}
+
+</div>
 
 <div class="video-panel" markdown="1">
 

@@ -10,6 +10,20 @@ classes: wide
 
 <div class="video-panel" markdown="1">
 
+### Production AI Inference on Your Laptop in 8 Minutes
+
+{% include video id="eZAELyls_Lg" provider="youtube" %}
+
+Deploy production-like AI inference infrastructure on your laptop with a single command. At CNCF Tampa Bay, I demoed kFabric — a tool that collapses the entire KServe stack (Kubernetes, Istio, Prometheus, and more) into an eight-minute setup. Same tools and patterns as production, built for development.
+
+[Watch on YouTube](https://youtu.be/eZAELyls_Lg){: .btn .btn--primary}
+
+</div>
+
+---
+
+<div class="video-panel" markdown="1">
+
 ### Enterprise AI Infrastructure 101: From Proof of Concept to Production
 
 {% include video id="9cDnHMIWsMQ" provider="youtube" %}

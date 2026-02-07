@@ -25,11 +25,11 @@ Whether you're deploying AI at scale, building with LLMs, or leading engineering
 
 <div class="video-panel" markdown="1">
 
-### Enterprise AI Infrastructure 101: From POC to Production
+### Production AI Inference on Your Laptop in 8 Minutes
 
-{% include video id="9cDnHMIWsMQ" provider="youtube" %}
+{% include video id="eZAELyls_Lg" provider="youtube" %}
 
-Why 87% of AI projects fail—and the proven infrastructure patterns that help you be in the 13% that succeed. [Watch more videos →](/videos/)
+Deploy production-like AI inference infrastructure on your laptop with a single command using kFabric. Presented at CNCF Tampa Bay. [Watch more videos →](/videos/)
 
 </div>
 
@@ -61,24 +61,3 @@ GPU utilization strategies, spot instance management, resource allocation, charg
 ### MLOps & Platform Engineering
 KServe, KubeFlow, model serving, CI/CD for ML, monitoring, multi-tenancy patterns, and building production-grade AI platforms.
 
-## Upcoming Event
-
-<div class="video-panel" markdown="1">
-
-### Fast Track AI Deployment: Master KServe in an Hour!
-
-**Date:** February 5, 2026 at 7:00 PM EST  
-**Location:** Virtual event
-
-Deploy production AI infrastructure with KServe in 60 minutes. Hands-on session with automation scripts and Kubernetes manifests.
-
-**Topics covered:**
-- Kubernetes cluster + GPU Operator setup
-- Istio + Knative installation
-- KServe deployment and configuration
-- GPU-accelerated InferenceService deployment
-- Monitoring with Prometheus, Grafana, and DCGM
-
-[Register Now →](https://community.cncf.io/events/details/cncf-cloud-native-tampa-bay-presents-fast-track-ai-deployment-master-kserve-in-an-hour/){: .btn .btn--success}
-
-</div>
