@@ -1,18 +1,17 @@
 # Main navigation links
 main:
-  - title: "Home"
-    url: /
   - title: "Posts"
     url: /posts/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "About"
+    url: /about/
+
+# Sidebar navigation links
+sidebar:
   - title: "Videos"
     url: /videos/
   - title: "Community"
     url: /community/
-  - title: "About"
-    url: /about/
-  - title: "Search"
-    url: /search/
