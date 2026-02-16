@@ -11,7 +11,7 @@ classes: wide
 
 ## Welcome!
 
-Hi, I'm David. I've spent my career building production systems at AWS, Cisco, and now as CTO of [ActualyzeAI](https://www.actualyze.ai) from distributed infrastructure to AI platforms to engineering teams that ship.
+Hi, I'm David. I've spent my career building production systems at companies like AWS and Cisco — from distributed infrastructure to AI platforms to engineering teams that ship.
 
 This blog covers what I've learned building systems that actually work: **enterprise AI infrastructure**, **LLM-assisted development workflows**, **Kubernetes platforms**, **engineering culture**, and the **distributed systems patterns** that separate demos from production.
 

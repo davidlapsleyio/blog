@@ -11,8 +11,6 @@ toc_icon: "user"
 
 <h2 style="text-align: center; font-size: 1.125em; margin-bottom: 0.5em;">David Lapsley, Ph.D.</h2>
 
-<p style="text-align: center; font-size: 1.125em; margin-bottom: 1.5em;"><strong>CTO, <a href="https://www.actualyze.ai">ActualyzeAI</a></strong></p>
-
 <div style="background: #f9f9f9; border-left: 4px solid #7a8288; padding: 1em; margin: 1.5em 0;">
 I've spent three decades building distributed systems and infrastructure platforms that work at scale. From research labs to global cloud providers to startups, I focus on one thing: shipping production systems that survive contact with reality.
 </div>
