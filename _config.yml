@@ -76,8 +76,6 @@ defaults:
       toc_label: "Contents"
       toc_icon: "list"
       toc_sticky: true
-      sidebar:
-        nav: "sidebar"
   # _pages
   - scope:
       path: "_pages"
@@ -85,8 +83,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      sidebar:
-        nav: "sidebar"
 
 # Pagination
 paginate: 5
