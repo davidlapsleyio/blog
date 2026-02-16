@@ -1,5 +1,6 @@
 ---
 title: "The Enterprise AI Infrastructure Stack: From Proof of Concept to Production"
+description: "Why 87% of AI projects fail and how to succeed. A deep dive into the enterprise AI infrastructure stack covering Kubernetes, GPU optimization, MLOps, and hybrid cloud."
 date: 2025-10-27
 layout: single
 author_profile: true

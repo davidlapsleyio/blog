@@ -1,5 +1,6 @@
 ---
 title: "Introducing KodeOps: Open Source SDLC Automation"
+description: "Announcing KodeOps, an open source CLI and TUI tool that automates the software development lifecycle from concept to structured backlog using agentic AI."
 date: 2026-01-19
 layout: single
 author_profile: true

@@ -1,5 +1,6 @@
 ---
 title: "The Importance of a Secure Development Lifecycle"
+description: "Why integrating security at every phase of software development is imperative. A guide to SDLC phases, best practices, and building secure software from the ground up."
 date: 2024-07-11
 layout: single
 author_profile: true

@@ -1,5 +1,6 @@
 ---
 title: "Announcing ActualyzeAI"
+description: "After leaving AWS to explore AI-driven software development, I'm co-founding Actualyze.ai as CTO with a world-class team to build the future of agentic AI."
 date: 2025-07-16
 layout: single
 author_profile: true

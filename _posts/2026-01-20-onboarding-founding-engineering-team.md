@@ -1,5 +1,6 @@
 ---
 title: "Onboarding Our Founding Engineering Team"
+description: "Onboarding Actualyze's founding engineers — a team that's shipped production systems processing billions of requests, now building with spec-driven AI development."
 date: 2026-01-20
 layout: single
 author_profile: true

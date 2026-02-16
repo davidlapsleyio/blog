@@ -1,5 +1,6 @@
 ---
 title: "Why Go is the Best Language for Production-Grade Agentic AI and Orchestration"
+description: "After 25 years of Python and 3 years of Go, here's why Go is the best language for production agentic AI — type safety, concurrency, and AI-assisted code generation."
 date: 2026-01-17
 layout: single
 author_profile: true

@@ -1,0 +1,80 @@
+<!-- Enhanced Schema.org / JSON-LD structured data -->
+{% if page.layout == "single" and page.date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 160 | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.author.avatar }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }{% if page.header.og_image or site.og_image %},
+  "image": "{{ site.url }}{{ page.header.og_image | default: site.og_image }}"
+  {% endif %}
+}
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}{{ site.author.avatar }}",
+  "jobTitle": "CTO",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Actualyze.ai",
+    "url": "https://www.actualyze.ai"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/davidlapsley"
+  ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    }{% if page.categories.size > 0 %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.categories.first | jsonify }},
+      "item": "{{ site.url }}/categories/#{{ page.categories.first | slugify }}"
+    }{% endif %}{% if page.title %},
+    {
+      "@type": "ListItem",
+      "position": {% if page.categories.size > 0 %}3{% else %}2{% endif %},
+      "name": {{ page.title | jsonify }},
+      "item": "{{ page.url | absolute_url }}"
+    }{% endif %}
+  ]
+}
+</script>

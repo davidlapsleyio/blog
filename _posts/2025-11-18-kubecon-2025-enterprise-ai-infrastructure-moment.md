@@ -1,5 +1,6 @@
 ---
 title: "KubeCon 2025: The Enterprise AI Infrastructure Moment Has Arrived"
+description: "Key takeaways from KubeCon 2025 in Atlanta: data sovereignty is driving enterprises to bring AI infrastructure on-premises with Kubernetes and cloud-native tooling."
 date: 2025-11-18
 layout: single
 author_profile: true

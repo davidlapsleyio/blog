@@ -1,5 +1,6 @@
 ---
 title: "Building High-Performance Engineering Culture: Mission, Vision, and Tenets"
+description: "How to build high-performance engineering teams using Amazon's mission-vision-tenets framework. Practical lessons from AWS, Cisco, and startups on team alignment."
 date: 2026-01-17
 layout: single
 author_profile: true

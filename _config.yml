@@ -1,17 +1,22 @@
 # Site Settings
 title: "@davidlapsleyio"
 future: true
-search: false
+search: true
 
 # Analytics
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-FDNSMGTHBN"
+    tracking_id: "G-1XBDLYDE19"
 email: davidlapsleyio@gmail.com
 description: My personal blog site
 url: https://blog.davidlapsley.io
 baseurl: ""
+og_image: /assets/images/headshot.jpg
+
+# Twitter/X Card support
+twitter:
+  username: davidlapsleyio
 
 # Theme Settings
 theme: minimal-mistakes-jekyll

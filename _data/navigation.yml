@@ -4,6 +4,10 @@ main:
     url: /
   - title: "Posts"
     url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
   - title: "Videos"
     url: /videos/
   - title: "Community"

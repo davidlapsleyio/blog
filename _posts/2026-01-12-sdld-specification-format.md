@@ -1,5 +1,6 @@
 ---
 title: "The SDLD Specification Format: A Canonical Reference"
+description: "A canonical reference for the SDLD specification format — structured specs that guide both human developers and LLMs through the software development lifecycle."
 date: 2026-01-12
 layout: single
 author_profile: true

@@ -1,5 +1,6 @@
 ---
 title: "Spec-Driven Development: A Comprehensive SDLC for AI-Assisted Software Engineering"
+description: "A comprehensive SDLC that harnesses AI acceleration while maintaining engineering discipline. Treat specifications as first-class artifacts versioned alongside code."
 date: 2026-01-12
 layout: single
 author_profile: true

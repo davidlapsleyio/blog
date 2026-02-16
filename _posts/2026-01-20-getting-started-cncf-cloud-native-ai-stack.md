@@ -1,5 +1,6 @@
 ---
 title: "Getting Started with the CNCF Cloud-Native AI Stack: A Practical Guide for New Engineers"
+description: "A practical learning path for the CNCF Cloud-Native AI ecosystem: KServe, vLLM, Karmada, llm-d, and Kubernetes for production AI inference at scale."
 date: 2026-01-20
 layout: single
 author_profile: true

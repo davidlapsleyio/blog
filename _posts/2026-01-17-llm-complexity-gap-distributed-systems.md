@@ -1,5 +1,6 @@
 ---
 title: "The LLM Complexity Gap: Why No-Code Works for Web UIs But Not for Distributed Systems"
+description: "Why LLMs can generate web UIs but struggle with distributed systems. Exploring the complexity gap between no-code tools and production multi-service architectures."
 date: 2026-01-17
 layout: single
 author_profile: true

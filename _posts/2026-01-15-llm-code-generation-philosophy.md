@@ -1,5 +1,6 @@
 ---
 title: "The IDE Doesn't Matter: A Philosophy for LLM-Powered Code Generation"
+description: "Why obsessing over Cursor vs Claude Code misses the point. LLMs need structure, constraints, and feedback — the IDE is just a shell. Focus on what's inside."
 date: 2026-01-15
 layout: single
 author_profile: true

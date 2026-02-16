@@ -1,5 +1,6 @@
 ---
 title: "Working Backwards with SDLD: Building a Go Service with Mage"
+description: "A working-backwards tutorial building a Go service with Mage using the SDLD methodology — from press release to production-ready Launch Readiness Reporter."
 date: 2026-01-13
 layout: single
 author_profile: true

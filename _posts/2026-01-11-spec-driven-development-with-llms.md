@@ -1,5 +1,6 @@
 ---
 title: "Spec-Driven LLM Development (SDLD): Precise Engineering Through Specifications"
+description: "How to build production-grade code with LLMs using spec-driven development. Specifications as contracts that ensure both humans and AI produce exactly what you need."
 date: 2026-01-11
 layout: single
 author_profile: true

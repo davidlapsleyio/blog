@@ -1,5 +1,6 @@
 ---
 title: "What KodeOps Means: Unified SDLC Automation"
+description: "Just as DevOps unified development and operations, KodeOps unifies the entire software development lifecycle under a single AI-powered automation fabric."
 date: 2026-01-19
 layout: single
 author_profile: true

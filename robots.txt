@@ -1,0 +1,8 @@
+# robots.txt for blog.davidlapsley.io
+User-agent: *
+Allow: /
+
+Disallow: /assets/
+Disallow: /page*/
+
+Sitemap: https://blog.davidlapsley.io/sitemap.xml

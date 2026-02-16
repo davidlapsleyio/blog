@@ -1,5 +1,6 @@
 ---
 title: "re:Invent 2025: AWS Frontier Agents and Developer Tools"
+description: "Notes from AWS re:Invent 2025 on frontier agents: Kiro autonomous agent, AWS Security Agent, and DevOps Agent — autonomous AI tools for extended development tasks."
 date: 2025-12-05
 layout: single
 author_profile: true

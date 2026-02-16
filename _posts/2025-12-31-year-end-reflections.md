@@ -1,5 +1,6 @@
 ---
 title: "Year-End Reflections: The Last 18 Months, and What Comes Next"
+description: "Reflecting on 18 months since leaving AWS — building AI-powered development tools, co-founding Actualyze.ai, and what's ahead for agentic AI and cloud-native infrastructure."
 date: 2025-12-31
 layout: single
 author_profile: true

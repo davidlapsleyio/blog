@@ -1,5 +1,6 @@
 ---
 title: "Production AI Inference on Your Laptop in 8 Minutes: Mastering KServe with kFabric"
+description: "Deploy production-like AI inference infrastructure on your laptop in 8 minutes using KServe, kFabric, Istio, and Prometheus on Kubernetes with GPU monitoring."
 date: 2026-02-06
 layout: single
 author_profile: true
