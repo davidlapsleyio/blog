@@ -18,3 +18,6 @@ Thumbs.db
 .vscode/
 .idea/
 .kiro/
+
+# Ignore blog style template
+blog-style-post-template.md
