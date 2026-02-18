@@ -2,7 +2,7 @@
 title: "Amazon's Working Backwards SDLC: A Practical Guide
   for SMB Engineering Teams"
 description: "How to adopt Amazon's Working Backwards process
-  — from PRFAQ to backlog — without Amazon-scale resources. A
+  (from PRFAQ to backlog) without Amazon-scale resources. A
   step-by-step guide for SMB engineers, engineering leaders,
   and product managers."
 date: 2026-02-17
@@ -35,12 +35,12 @@ backwards to the implementation. As Jeff Bezos put it,
 *["We innovate by starting with the customer and working
 backwards."](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)*
 
-Most people know about the PRFAQ — Amazon's famous press
+Most people know about the PRFAQ, Amazon's famous press
 release document written before a line of code exists. But the
 PRFAQ is just one artifact in a structured chain that connects
 a customer problem to an actionable engineering backlog. The
-full process — personas, use cases, PRFAQ, capability maps,
-epics, user stories — is what makes it work. Colin Bryar and
+full process (personas, use cases, PRFAQ, capability maps,
+epics, user stories) is what makes it work. Colin Bryar and
 Bill Carr document this process extensively in
 [*Working Backwards*](https://workingbackwards.com/), the
 definitive book on Amazon's internal practices, drawn from
@@ -54,7 +54,7 @@ valuable at smaller companies where you can't afford to build
 the wrong thing.
 
 This post walks through Amazon's entire Working Backwards
-SDLC — every artifact, every format, every linkage — and
+SDLC (every artifact, every format, every linkage) and
 shows how SMB engineering teams can adopt it without the
 overhead of a 10,000-person organization.
 
@@ -68,7 +68,7 @@ institutional tolerance for failed initiatives. You don't.
 
 When you have a 5-person engineering team and 12 months of
 runway, every sprint matters. Building the wrong feature for
-three months isn't a learning experience — it's an existential
+three months isn't a learning experience. It's an existential
 threat. The Working Backwards process exists precisely to
 prevent this. It forces clarity before code.
 
@@ -82,12 +82,12 @@ The economics are straightforward:
 I've seen this pattern play out dozens of times. A team
 burns three months building something nobody asked for,
 then wonders why they're behind. The root cause is almost
-never technical — it's a planning failure. This is the same
+never technical. It's a planning failure. This is the same
 dynamic behind the stat that **87% of data science projects
 never reach production** (VentureBeat, 2019). The models
 work. The algorithms are fine. Projects fail because nobody
 planned for what comes after the POC. Working Backwards
-attacks that exact problem — forcing you to plan for the
+attacks that exact problem by forcing you to plan for the
 end state before you write a single line of code.
 
 Amazon invented Working Backwards because even at their
@@ -124,31 +124,31 @@ A customer problem.
 This is the most important discipline in the entire process,
 and it's rooted in
 [Amazon's first Leadership Principle: Customer Obsession](https://www.amazon.jobs/content/en/our-workplace/leadership-principles)
-— *"Leaders start with the customer and work backwards."*
-Teams naturally gravitate toward solutions — "let's build
-a recommendation engine" or "we need a mobile app." Working
+: *"Leaders start with the customer and work backwards."*
+Teams naturally gravitate toward solutions ("let's build
+a recommendation engine" or "we need a mobile app"). Working
 Backwards forces you to articulate the problem first.
 
 AWS's own
 [prescriptive guidance on product strategy](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/start-with-why.html)
-frames this as "Start with Why" — begin by answering why
+frames this as "Start with Why": begin by answering why
 the product should exist and how it contributes to business
 outcomes before defining what to build.
 
 The questions that matter at this stage:
 
-- **Why should this product be built?** Not "what" — "why."
+- **Why should this product be built?** Not "what," but "why."
 - **What customer outcome would it achieve?** Be specific.
   "Make customers happier" isn't an outcome. As Bezos wrote
   in his
   [2016 letter to shareholders](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders),
   customers are *"always beautifully, wonderfully
-  dissatisfied, even when they report being happy"* — your
+  dissatisfied, even when they report being happy."* Your
   job is to find the specific dissatisfaction worth solving.
 - **What does success look like?** Define it in measurable
   terms.
 
-The output is a **product vision statement** — a concise
+The output is a **product vision statement**, a concise
 articulation of the customer problem and the desired
 outcome. This becomes the north star for everything that
 follows.
@@ -170,7 +170,7 @@ solution comes later.
 At Amazon, this stage might involve multi-week discovery
 processes with customer interviews and market research. At
 an SMB, you probably already know your customers'
-problems — you talk to them every day.
+problems. You talk to them every day.
 
 Write the vision statement in one paragraph. Share it with
 the team. If everyone can't articulate the customer problem
@@ -186,7 +186,7 @@ and prevents the team from building for an abstract
 audience. AWS's product strategy guidance
 [describes personas as a tool](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/start-with-why.html)
 for understanding customer behavior, goals, and
-frustrations — and for mapping the transition from current
+frustrations, and for mapping the transition from current
 state to target state.
 
 Personas answer the question: **"Who exactly are we
@@ -197,8 +197,8 @@ building this for, and what does that person need?"**
 Each persona includes:
 
 - **Name and Role:** A memorable name and brief context.
-  *"Busy Brenda — Time-strapped working parent"* or
-  *"DevOps Dan — Senior engineer managing 15
+  *"Busy Brenda, time-strapped working parent"* or
+  *"DevOps Dan, senior engineer managing 15
   microservices."*
 - **Demographics and Background:** Age, occupation, tech
   proficiency, environment. Enough to make the persona
@@ -213,12 +213,12 @@ Each persona includes:
   mindset. *"I need to finish my shopping in minutes,
   not hours."*
 
-The whole thing fits on one page. The goal is empathy —
+The whole thing fits on one page. The goal is empathy,
 understanding the user deeply enough to make good decisions
 on their behalf. As
 [Nielsen Norman Group explains](https://www.nngroup.com/articles/persona/),
 personas work because humans connect better with specific
-examples than with abstract statistics — referencing
+examples than with abstract statistics. Referencing
 "DevOps Dan" in a design review is more powerful than
 "our users."
 
@@ -227,7 +227,7 @@ examples than with abstract statistics — referencing
 > *"DevOps Dan, age 38, is a senior platform engineer at a
 > 50-person SaaS company. He manages 15 microservices
 > across three Kubernetes clusters. He's technically strong
-> but drowning in operational toil — alert fatigue,
+> but drowning in operational toil: alert fatigue,
 > deployment issues, and status reporting consume 60% of
 > his week. His goal is to spend more time on architecture
 > and less time firefighting. His frustration: every tool
@@ -243,7 +243,7 @@ might have "the engineer who uses it daily" and "the
 engineering manager who approves the purchase."
 
 Don't over-invest here. Spend 30 minutes writing each
-persona. The value isn't in the document — it's in the
+persona. The value isn't in the document. It's in the
 conversation the team has while creating it.
 
 ---
@@ -265,8 +265,8 @@ and what outcome do they expect?"**
 persona's perspective.
 
 > *"Dan opens the platform dashboard Monday morning. He
-> sees a single-pane view of all 15 services — health
-> status, deployment history, and active incidents. He
+> sees a single-pane view of all 15 services (health
+> status, deployment history, and active incidents). He
 > spots a memory leak in the payments service, clicks
 > through to the details, and creates a Jira ticket
 > directly from the alert. Total time: 2 minutes instead
@@ -310,7 +310,7 @@ The **PRFAQ** (Press Release / Frequently Asked Questions)
 is Amazon's signature Working Backwards artifact. It is the
 single most valuable document in the entire process. The
 [Working Backwards website](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)
-— maintained by the book's authors — describes the PRFAQ
+(maintained by the book's authors) describes the PRFAQ
 as the principal tool of the Working Backwards process:
 *"a second form of written narrative that starts by
 defining the customer experience, then iteratively works
@@ -332,26 +332,26 @@ to articulate, in plain language, what the product does and
 why customers will care. If you can't write a compelling
 one-page press release, the product isn't ready to build.
 As Amazon puts it: if the press release doesn't answer
-*"So what?"* — if it doesn't describe something
-meaningfully better than what exists — *then it isn't
+*"So what?"*: if it doesn't describe something
+meaningfully better than what exists, *then it isn't
 worth building.*
 
 **It forces hard questions early.** The FAQ section
 requires you to confront business viability, technical
-risks, competitive threats, and operational challenges — on
+risks, competitive threats, and operational challenges, on
 paper, before you've spent a dollar on development. This is
 where bad ideas die cheaply. Amazon teams commonly write
 10+ drafts of a PRFAQ. Many never get approved. That's the
 point. As Bryar and Carr write in an
 [excerpt published on About Amazon](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes):
 *"Spending time up front to think through all details… to
-determine — without writing code — which products not to
+determine, without writing code, which products not to
 build, preserves resources for highest-impact ideas."*
 
 ### The Press Release Format
 
 The press release is one page. Written in journalistic
-style — headline, date, body paragraphs, customer quote.
+style: headline, date, body paragraphs, customer quote.
 It includes:
 
 - A headline that captures the product's value
@@ -362,10 +362,10 @@ It includes:
 
 **Example Press Release:**
 
-> **"Actualyze Launches Automated Status Reporting,
+> **"Acme Analytics Launches Automated Status Reporting,
 > Cutting Engineering Leaders' Admin Time by 80%"**
 >
-> *Tampa, FL — February 2026* — Actualyze today announced
+> *Tampa, FL, February 2026.* Acme Analytics today announced
 > Automated Status Reporting, a new capability that
 > generates weekly, monthly, and quarterly business reviews
 > directly from engineering activity data. Engineering
@@ -375,7 +375,7 @@ It includes:
 > Engineering teams at growing companies spend an average
 > of 3+ hours per week compiling status updates from Jira,
 > GitHub, and Slack. This administrative burden falls on
-> senior engineers and managers — the people whose time is
+> senior engineers and managers, the people whose time is
 > most valuable.
 >
 > "I used to spend every Friday afternoon pulling data
@@ -424,7 +424,7 @@ jargon. No architecture diagrams. The PRFAQ is a thinking
 tool, not a technical document.
 [Product School's PRFAQ guide](https://productschool.com/blog/product-fundamentals/prfaq)
 emphasizes that the framework forces teams to *"think from
-the customer's perspective from day one"* — the document
+the customer's perspective from day one."* The document
 serves as both a strategic planning tool and a
 communication device for securing organizational buy-in.
 
@@ -441,14 +441,14 @@ lead writes the first draft. Not a committee. One person,
 forcing themselves to articulate the vision clearly. Cedric
 Chin documented
 [nine months of adapting the PR/FAQ to a small team](https://commoncog.com/putting-amazons-pr-faq-to-practice/)
-and found the hardest part is emotional — *"writing forces
+and found the hardest part is emotional: *"writing forces
 you to confront uncomfortable truths about your idea's
 viability from a customer perspective."* That discomfort
 is the value.
 
 **Keep it to 2-3 pages total.** One page for the press
 release, one to two pages for the FAQ. You don't need five
-pages of FAQ — you need to answer the five hardest
+pages of FAQ. You need to answer the five hardest
 questions about your product.
 
 **Share it with the whole team.** Engineers, designers,
@@ -467,12 +467,12 @@ describes how Amazon categorizes launches into PRFAQ
 launches (major initiatives requiring executive approval)
 and non-PRFAQ launches (smaller improvements). If a couple
 of engineers can build it in a sprint or two, skip straight
-to user stories. Save the PRFAQ for bets that matter — new
+to user stories. Save the PRFAQ for bets that matter: new
 products, major features, pivots.
 
 ---
 
-## Step 5: Break It Down — Capability Map and Requirements
+## Step 5: Break It Down: Capability Map and Requirements
 
 Once the PRFAQ is approved (or at an SMB, once the team
 aligns on it), you need to translate the vision into
@@ -496,7 +496,7 @@ Document (BRD)** that includes:
 ### Overview
 
 A short recap of the product vision, target users, and
-objectives — tying back to the PRFAQ.
+objectives, tying back to the PRFAQ.
 
 ### Functional Requirements by Capability
 
@@ -519,7 +519,7 @@ specific and testable.
 ### Non-Functional Requirements
 
 These are your quality bars. Amazon has extremely high
-standards here, and you should too — adjusted for your
+standards here, and you should too, adjusted for your
 context:
 
 - **Performance:** Report generation must complete in
@@ -555,7 +555,7 @@ Use MoSCoW or a similar framework:
 - **Nice-to-have:** Valuable but deferrable. Backlog for
   later.
 
-Amazon aims for a **Minimum Lovable Product (MLP)** — a
+Amazon aims for a **Minimum Lovable Product (MLP)**, a
 step above MVP. The initial release should delight
 customers, not just barely work. This is a critical
 distinction. As
@@ -591,10 +591,10 @@ directly from the capabilities identified in Step 5.
 Amazon emphasizes **outcome-based planning**. Epics are
 defined by the result they provide, not the tasks involved.
 
-- **Not an epic:** "Build Database Schema" — that's a
+- **Not an epic:** "Build Database Schema." That's a
   technical task with no customer-visible outcome.
-- **An epic:** "Enable Automated Weekly Reports" —
-  outcome-focused, encompasses database, API, and UI work.
+- **An epic:** "Enable Automated Weekly Reports."
+  Outcome-focused, encompasses database, API, and UI work.
 
 This matters because outcome-based epics keep the team
 focused on delivering value, not just completing tasks.
@@ -621,7 +621,7 @@ Each epic includes:
 
 Each epic should be a
 **[vertical slice](https://agile.appliedframeworks.com/applied-frameworks-agile-blog/user-stories-making-the-vertical-slice)**
-— cutting through all layers of the stack to deliver a
+that cuts through all layers of the stack to deliver a
 complete feature. Don't split epics into "backend epic"
 and "frontend epic." A "backend epic" doesn't produce
 anything a customer can use. A vertical slice does.
@@ -642,14 +642,14 @@ creep signal.
 
 Keep it tight. If your v1 has more than five epics, you're
 probably trying to do too much. Identify the three epics
-that deliver the core value proposition — the ones that
-make the press release true — and ship those first.
+that deliver the core value proposition, the ones that
+make the press release true, and ship those first.
 
 Amazon's
 [two-pizza teams](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/)
 (6-10 people) typically deliver an epic in a few weeks to a
 couple of months. These are cross-functional teams that own
-features end-to-end — as
+features end-to-end, as
 [Martin Fowler describes](https://martinfowler.com/bliki/TwoPizzaTeam.html),
 they *"possess all necessary capabilities to deliver
 valuable software with minimal handoffs"* and operate under
@@ -672,7 +672,7 @@ Amazon uses the classic format:
 > **"As a \<user type\>, I want \<some ability\> so that
 > \<some benefit\>."**
 
-Every story includes **Acceptance Criteria** — the specific
+Every story includes **Acceptance Criteria**, the specific
 conditions that define when the story is done.
 
 ### Example
@@ -736,8 +736,8 @@ Under the epic "Automated Weekly Report Generation":
 
 ### Vertical Slices in Stories
 
-Each story implies **all the work required** — UI, API,
-database, tests — to deliver that user-facing result. Don't
+Each story implies **all the work required** (UI, API,
+database, tests) to deliver that user-facing result. Don't
 split a story into "frontend: add button" and "backend:
 process data." Those are horizontal slices that deliver
 nothing usable on their own.
@@ -745,8 +745,8 @@ nothing usable on their own.
 ### The INVEST Criteria
 
 Good stories follow
-**[INVEST](https://agilealliance.org/glossary/invest/)**
-— a set of criteria
+**[INVEST](https://agilealliance.org/glossary/invest/)**,
+a set of criteria
 [first articulated by Bill Wake](https://agileforall.com/new-to-agile-invest-in-good-user-stories/)
 to assess the quality of a user story:
 
@@ -781,7 +781,7 @@ coding begins, prevent rework later.
 ## Traceability: The Chain That Holds It All Together
 
 The most powerful aspect of the Working Backwards process
-isn't any single artifact — it's the **traceability**
+isn't any single artifact. It's the **traceability**
 between them.
 
 Every user story traces back to an epic. Every epic traces
@@ -806,12 +806,12 @@ This traceability serves three purposes:
 
 **It prevents feature creep.** If a proposed story doesn't
 trace back to the PRFAQ, it triggers a discussion. Maybe
-it's a great idea — but it's not *this* product's idea.
+it's a great idea, but it's not *this* product's idea.
 Put it in the backlog for later.
 
 **It enables impact assessment.** When a technical
-constraint forces a change — "we can't get real-time Jira
-data, only hourly snapshots" — the team can trace the
+constraint forces a change ("we can't get real-time Jira
+data, only hourly snapshots"), the team can trace the
 impact. Which stories are affected? Which acceptance
 criteria need updating? Which PRFAQ claims are at risk?
 
@@ -826,7 +826,7 @@ work that makes that promise real."
 You don't need a sophisticated requirements management
 tool. A simple spreadsheet that maps stories → epics →
 PRFAQ sections is enough. Or use labels in your issue
-tracker. The mechanism doesn't matter — the discipline of
+tracker. The mechanism doesn't matter. The discipline of
 maintaining the connections does.
 
 ---
@@ -886,7 +886,7 @@ That's one to two weeks from idea to actionable backlog.
 Not months. Not quarters. Days.
 
 The key insight: **the process compresses, not eliminates,
-the thinking.** You still do all the hard work — defining
+the thinking.** You still do all the hard work: defining
 the customer problem, articulating the value, specifying
 the requirements. You just do it in days instead of weeks
 because you're a small team with direct customer knowledge
@@ -931,7 +931,7 @@ A user story without acceptance criteria is a wish, not a
 requirement. "As a user, I want reports" tells an engineer
 nothing. Acceptance criteria define done. Without them,
 you'll review the implementation and say "that's not what
-I meant" — which wastes everyone's time.
+I meant," which wastes everyone's time.
 
 ### Mistake 5: Treating the Process as One-and-Done
 
@@ -957,8 +957,8 @@ conversations that drain momentum.
 **Prioritization clarity.** When a stakeholder asks for a
 new feature, you evaluate it against the PRFAQ. Does it
 serve the customer problem described in the press release?
-If yes, prioritize it. If no, it's a separate initiative —
-write its own PRFAQ.
+If yes, prioritize it. If no, it's a separate initiative.
+Write its own PRFAQ.
 
 **Hiring efficiency.** When you interview candidates, you
 can explain the product vision in five minutes using the
@@ -974,7 +974,7 @@ sparks will be worth more than the document itself.
 
 The Working Backwards process is your operating system. It
 gives you a structured path from customer insight to
-engineering backlog — with clear handoffs and
+engineering backlog, with clear handoffs and
 accountability at each step.
 
 **Own the PRFAQ.** You are the author. Not the engineer,
@@ -990,7 +990,7 @@ where product quality lives or dies.
 **Use traceability as your shield.** When scope creep
 threatens, trace the request back to the PRFAQ. If it
 doesn't connect, it's not in scope. This isn't about
-saying no — it's about saying "not now, and here's why."
+saying no. It's about saying "not now, and here's why."
 
 ## For Engineers
 
@@ -1006,7 +1006,7 @@ review time.
 **Traceability gives you context.** When you're deep in
 implementation and wondering why a requirement exists, the
 trace back to the PRFAQ gives you the answer. This context
-helps you make better technical decisions — because you
+helps you make better technical decisions because you
 understand the *intent*, not just the *specification*.
 
 **Push back on vague stories.** If a story doesn't have
@@ -1021,8 +1021,8 @@ process only works if everyone maintains the standard.
 Amazon's Working Backwards SDLC isn't magic. It's
 disciplined thinking, applied in sequence, producing
 artifacts that build on each other. The process works
-because it forces the hardest questions — "What customer
-problem are we solving?" and "Why will customers care?" —
+because it forces the hardest questions ("What customer
+problem are we solving?" and "Why will customers care?")
 to be answered before a line of code is written.
 
 For SMB teams, the process scales down to days instead of
@@ -1056,14 +1056,14 @@ What worked? What didn't?
 
 - Share your experience in the comments below
 - Find me on Twitter/X:
-  [@actualaboratory](https://x.com/actualaboratory)
-- Email me directly: david@actualyze.ai
+  [@davidlapsleyio](https://x.com/davidlapsleyio)
+- Email me directly: davidlapsleyio@gmail.com
 
 If this post was useful, share it with a fellow
 engineering leader or product manager who's struggling
 with alignment between product vision and engineering
 execution. The Working Backwards process won't solve
-every problem — but it will make sure you're solving the
+every problem, but it will make sure you're solving the
 right ones.
 
 ---
@@ -1073,99 +1073,99 @@ right ones.
 ### Books
 
 - Bryar, C. & Carr, B.
-  [*Working Backwards: Insights, Stories, and Secrets from Inside Amazon*](https://workingbackwards.com/)
-  — The definitive book on Amazon's product development
+  [*Working Backwards: Insights, Stories, and Secrets from Inside Amazon*](https://workingbackwards.com/).
+  The definitive book on Amazon's product development
   process, written by two executives with 27 combined
   years at Amazon. Covers the PRFAQ methodology, narrative
   culture, and Leadership Principles in depth.
 
 ### Amazon and AWS Official Resources
 
-- [Amazon Leadership Principles](https://www.amazon.jobs/content/en/our-workplace/leadership-principles)
-  — Amazon's official 16 Leadership Principles, starting
+- [Amazon Leadership Principles](https://www.amazon.jobs/content/en/our-workplace/leadership-principles).
+  Amazon's official 16 Leadership Principles, starting
   with Customer Obsession. The foundation of the Working
   Backwards culture.
-- [An Insider Look at Amazon's Culture and Processes](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
-  — Excerpt from *Working Backwards* published on About
+- [An Insider Look at Amazon's Culture and Processes](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes).
+  Excerpt from *Working Backwards* published on About
   Amazon, detailing how the PR/FAQ process works and why
   most PRFAQs never make it to development.
-- [AWS Prescriptive Guidance: Start with Why](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/start-with-why.html)
-  — AWS's public guidance on using personas, journey maps,
+- [AWS Prescriptive Guidance: Start with Why](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/start-with-why.html).
+  AWS's public guidance on using personas, journey maps,
   and PR/FAQ to craft a product vision.
-- [AWS Prescriptive Guidance: FAQ](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/faq.html)
-  — Companion FAQ covering how the product strategy
+- [AWS Prescriptive Guidance: FAQ](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/faq.html).
+  Companion FAQ covering how the product strategy
   supports agile development, epics, and user stories.
-- [Amazon's Two-Pizza Teams](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/)
-  — AWS Executive Insights article on how Amazon structures
+- [Amazon's Two-Pizza Teams](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/).
+  AWS Executive Insights article on how Amazon structures
   small, autonomous teams for speed and ownership.
-- [Two-Pizza Teams: Accountability and Empowerment](https://aws.amazon.com/blogs/enterprise-strategy/two-pizza-teams-are-just-the-start-accountability-and-empowerment-are-key-to-high-performing-agile-organizations-part-2/)
-  — AWS Enterprise Strategy blog on scaling the two-pizza
+- [Two-Pizza Teams: Accountability and Empowerment](https://aws.amazon.com/blogs/enterprise-strategy/two-pizza-teams-are-just-the-start-accountability-and-empowerment-are-key-to-high-performing-agile-organizations-part-2/).
+  AWS Enterprise Strategy blog on scaling the two-pizza
   team model.
 
 ### PRFAQ Process Guides
 
-- [The Working Backwards PR/FAQ Process](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)
-  — Detailed guide from the *Working Backwards* authors on
+- [The Working Backwards PR/FAQ Process](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/).
+  Detailed guide from the *Working Backwards* authors on
   the PR/FAQ structure, review process, and common
   pitfalls.
-- [Working Backwards PR/FAQ Instructions and Template](https://workingbackwards.com/resources/working-backwards-pr-faq/)
-  — Practical template and writing instructions from
+- [Working Backwards PR/FAQ Instructions and Template](https://workingbackwards.com/resources/working-backwards-pr-faq/).
+  Practical template and writing instructions from
   workingbackwards.com.
-- [The Working Backwards Launch Strategy at Amazon](https://withluna.ai/blog/the-working-backwards-launch-strategy-at-amazon)
-  — Celine Chalhoub (Amazon Music product leader) walks
+- [The Working Backwards Launch Strategy at Amazon](https://withluna.ai/blog/the-working-backwards-launch-strategy-at-amazon).
+  Celine Chalhoub (Amazon Music product leader) walks
   through the 10-step Working Backwards launch process,
   including PRFAQ vs non-PRFAQ launches.
-- [PRFAQ: Amazon's Innovation Blueprint](https://productschool.com/blog/product-fundamentals/prfaq)
-  — Product School's comprehensive guide with templates
+- [PRFAQ: Amazon's Innovation Blueprint](https://productschool.com/blog/product-fundamentals/prfaq).
+  Product School's comprehensive guide with templates
   and a worked example.
-- [Working Backwards: The Amazon PR/FAQ for Product Innovation](https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/)
-  — Overview of the PR/FAQ framework with real examples
+- [Working Backwards: The Amazon PR/FAQ for Product Innovation](https://productstrategy.co/working-backwards-the-amazon-prfaq-for-product-innovation/).
+  Overview of the PR/FAQ framework with real examples
   and downloadable templates.
 
 ### Agile Practices
 
-- [Amazon's Product Development Process with Ryan Lysne](https://agiledata.io/podcast/no-nonsense-agile-podcast/amazons-product-development-process-with-ryan-lysne/)
-  — No Nonsense Agile Podcast episode with detailed
+- [Amazon's Product Development Process with Ryan Lysne](https://agiledata.io/podcast/no-nonsense-agile-podcast/amazons-product-development-process-with-ryan-lysne/).
+  No Nonsense Agile Podcast episode with detailed
   walkthrough of how Amazon teams define epics and stories
   from the PRFAQ.
-- [User Stories: Making the Vertical Slice](https://agile.appliedframeworks.com/applied-frameworks-agile-blog/user-stories-making-the-vertical-slice)
-  — Applied Frameworks guide on vertical slicing with nine
+- [User Stories: Making the Vertical Slice](https://agile.appliedframeworks.com/applied-frameworks-agile-blog/user-stories-making-the-vertical-slice).
+  Applied Frameworks guide on vertical slicing with nine
   slicing patterns and before/after examples.
-- [INVEST Criteria for User Stories](https://agilealliance.org/glossary/invest/)
-  — Agile Alliance glossary entry on the INVEST criteria
+- [INVEST Criteria for User Stories](https://agilealliance.org/glossary/invest/).
+  Agile Alliance glossary entry on the INVEST criteria
   for assessing user story quality.
-- [New to Agile? INVEST in Good User Stories](https://agileforall.com/new-to-agile-invest-in-good-user-stories/)
-  — Agile for All's practical guide to writing stories
+- [New to Agile? INVEST in Good User Stories](https://agileforall.com/new-to-agile-invest-in-good-user-stories/).
+  Agile for All's practical guide to writing stories
   that meet the INVEST criteria.
-- [Two-Pizza Team](https://martinfowler.com/bliki/TwoPizzaTeam.html)
-  — Martin Fowler's explanation of the two-pizza team
+- [Two-Pizza Team](https://martinfowler.com/bliki/TwoPizzaTeam.html).
+  Martin Fowler's explanation of the two-pizza team
   concept, its origins, and how it relates to team
   autonomy and ownership.
 
 ### Product Strategy and UX
 
-- [Minimum Lovable Product (MLP): Why PMs Should Embrace It](https://www.aha.io/roadmapping/guide/plans/what-is-a-minimum-lovable-product)
-  — Aha! guide on why MLPs outperform MVPs for product
+- [Minimum Lovable Product (MLP): Why PMs Should Embrace It](https://www.aha.io/roadmapping/guide/plans/what-is-a-minimum-lovable-product).
+  Aha! guide on why MLPs outperform MVPs for product
   launches.
-- [Putting Amazon's PR/FAQ to Practice](https://commoncog.com/putting-amazons-pr-faq-to-practice/)
-  — Cedric Chin documents nine months of adapting the
+- [Putting Amazon's PR/FAQ to Practice](https://commoncog.com/putting-amazons-pr-faq-to-practice/).
+  Cedric Chin documents nine months of adapting the
   PR/FAQ process to a small team, with a real worked
   example. Especially relevant for SMBs.
-- [Personas: A Simple Introduction](https://www.nngroup.com/articles/persona/)
-  — Nielsen Norman Group's authoritative guide to creating
+- [Personas: A Simple Introduction](https://www.nngroup.com/articles/persona/).
+  Nielsen Norman Group's authoritative guide to creating
   and using personas in product development.
-- [Jeff Bezos's 2016 Letter to Shareholders](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders)
-  — Bezos on "Day 1" thinking, customer obsession, and
+- [Jeff Bezos's 2016 Letter to Shareholders](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders).
+  Bezos on "Day 1" thinking, customer obsession, and
   high-velocity decision-making.
-- [How Amazon Defines and Operationalizes a Day 1 Culture](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/)
-  — AWS Executive Insights on the cultural foundations
+- [How Amazon Defines and Operationalizes a Day 1 Culture](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/).
+  AWS Executive Insights on the cultural foundations
   behind Working Backwards, including two-pizza teams and
   the one-way/two-way door decision framework.
 
 ---
 
-David Lapsley, Ph.D., has spent 25+ years building
-infrastructure platforms at scale. Previously Director of
+David Lapsley, Ph.D., has 25+ years of industry experience,
+with decades spent building infrastructure platforms at scale. Previously Director of
 Network Fabric Controllers at AWS (largest network fabric
 in Amazon history) and Director at Cisco (DNA Center
 Maglev Platform, $1B run rate). He specializes in helping
