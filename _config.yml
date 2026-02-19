@@ -27,7 +27,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 author:
   name: "David Lapsley, Ph.D."
   avatar: "/assets/images/headshot.jpg"
-  bio: "Enterprise-grade AI infrastructure and robust, scalable distributed systems"
+  bio: "AI-accelerated SDLC, cybersecurity, networking at scale, and robust, scalable distributed systems"
   location:
   links:
     - label: "LinkedIn"

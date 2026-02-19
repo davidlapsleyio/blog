@@ -1,0 +1,87 @@
+{
+  "mcpServers": {
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "code-review": {
+      "command": ".local/node/bin/node",
+      "args": [
+        "node_modules/code-review-mcp-server/dist/index.js"
+      ],
+      "env": {
+        "LOCAL_INSTRUCTIONS_FILE_PATH": "./docs/review-guidelines.md"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "codeReview",
+        "getLocalGitDiff"
+      ]
+    },
+    "context7": {
+      "command": ".local/node/bin/node",
+      "args": [
+        "node_modules/@upstash/context7-mcp/dist/index.js"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "resolve-library-id",
+        "get-library-docs",
+        "query-docs"
+      ]
+    },
+    "github": {
+      "command": ".local/node/bin/node",
+      "args": [
+        "node_modules/@modelcontextprotocol/server-github/dist/index.js"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "playwright": {
+      "command": ".local/node/bin/node",
+      "args": [
+        "node_modules/@executeautomation/playwright-mcp-server/dist/index.js"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "aws-docs": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-documentation-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "shipkode": {
+      "command": "make",
+      "args": [
+        "run"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "hello",
+        "discover_generate_personas",
+        "discover_generate_usecases",
+        "discover_generate_prfaq",
+        "discover_generate_idea",
+        "discover_list_ideas",
+        "discover_write_idea",
+        "deliver_generate_feature_map",
+        "deliver_generate_all_specs",
+        "deliver_generate_spec",
+        "deliver_write_specs"
+      ]
+    }
+  }
+}

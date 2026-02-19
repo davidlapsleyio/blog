@@ -21,3 +21,6 @@ Thumbs.db
 
 # Ignore blog style template
 .working
+.local
+node_modules
+package*.json
