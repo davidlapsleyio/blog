@@ -147,7 +147,7 @@ Building and managing Kubernetes operators with KUDO.
 
 ## Organizers
 
-**David Lapsley** - CTO, ActualyzeAI  
+**David Lapsley** - Founder & CEO, Stealth
 **Trevor Roberts Jr** - Infrastructure Engineering, Capital One
 
 ## Questions?
