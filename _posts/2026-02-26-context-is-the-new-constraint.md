@@ -29,7 +29,7 @@ The instinct was to give the model more context. Longer system prompts. Bigger C
 
 In my [earlier post on the PRFAQ-to-Backlog pipeline]({% post_url 2026-02-21-from-prfaq-to-backlog-working-backwards-as-ai-pipeline %}), I flagged this problem and promised to cover it in depth. This is that post. After building a pipeline that generates structured specifications for 20+ feature products, I've learned that context management is the scaling bottleneck nobody talks about. Not model capability. Not prompt engineering. The volume and relevance of what you feed the model.
 
-The insight that reframed the problem for me: managing what your AI knows is structurally identical to managing what your engineering team knows. You don't give every engineer the full codebase on day one. You give them curated onboarding materials that compress institutional knowledge into what they actually need to be productive.
+The insight that reframed the problem for me: managing what your AI knows is structurally identical to managing what your engineering team knows. Every engineer can read the full codebase, but nobody starts there. You give them curated onboarding materials that guide them to the parts that matter for their work.
 
 ## The problem: context grows quadratically
 
@@ -69,9 +69,9 @@ I spent two weeks trying to solve this as a pure engineering problem. Compressio
 
 Then I realized where I'd seen this pattern. Not in software. In every engineering organization I've ever run.
 
-Any leader who has scaled a team past 50 people knows the information management problem. You don't give every engineer access to every design document for every service. You don't forward every leadership email to every team. You build communication structures that compress organizational knowledge into what each team actually needs.
+Any leader who has scaled a team past 50 people knows the information management problem. Every engineer can access every design document. They should. But nobody has time to read everything, and nobody should have to. You build communication structures that guide people to what they need and summarize the rest.
 
-New engineers get onboarding docs that summarize the system architecture, not the full repository of design decisions accumulated over years. Teams get interface contracts for the services they depend on, not the full internal specifications. Weekly summaries replace the daily firehose for stakeholders who need awareness without detail.
+New engineers get onboarding docs that distill the system architecture into something they can absorb in a week. The full repository of design decisions is there if they want to dig in, but the onboarding doc tells them where to start. Teams working on a service get curated summaries of the services they depend on, not because the full specs are hidden, but because reading 50 internal specs to find the three that matter is a waste of their time. Weekly summaries give stakeholders the signal without requiring them to drink from the firehose.
 
 The mapping is almost uncomfortably direct:
 
@@ -83,7 +83,7 @@ The mapping is almost uncomfortably direct:
 | Information grows as the org grows | Context grows as features accumulate |
 | Over-communication wastes attention | Over-context wastes tokens and degrades quality |
 
-In management, the fix is communication architecture: steering documents, executive summaries, interface contracts, need-to-know filtering. The same categories apply to AI context management.
+In management, the fix is communication architecture: steering documents, executive summaries, interface contracts, guided navigation. The same categories apply to AI context management.
 
 ## Progressive summarization: the core strategy
 
