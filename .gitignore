@@ -24,3 +24,4 @@ Thumbs.db
 .local
 node_modules
 package*.json
+CLAUDE.md

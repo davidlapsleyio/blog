@@ -238,7 +238,7 @@ I spent two weeks over-engineering this before the management analogy clicked. T
 
 ---
 
-*David Lapsley, Ph.D., is Founder and CEO of a stealth startup. He has spent 25+ years building infrastructure platforms at scale. Previously Director of Network Fabric Controllers at AWS (largest network fabric in Amazon history) and Director at Cisco (DNA Center Maglev Platform, $1B run rate). He writes about AI infrastructure, AI-accelerated SDLC, and the gap between POC and production.*
+*David Lapsley, Ph.D., is Founder and CEO of ShipKodeAI. He has spent 25+ years building infrastructure platforms at scale. Previously Director of Network Fabric Controllers at AWS (largest network fabric in Amazon history) and Director at Cisco (DNA Center Maglev Platform, $1B run rate). He writes about AI infrastructure, AI-accelerated SDLC, and the gap between POC and production.*
 
 ## References
 
