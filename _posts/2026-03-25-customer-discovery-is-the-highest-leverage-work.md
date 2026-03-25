@@ -22,7 +22,7 @@ tags:
   - product-market-fit
 ---
 
-I've spent the last month doing almost nothing but talking to potential customers. Twenty-plus conversations, each one between thirty and sixty minutes. No demos. No pitches. Just listening.
+I've spent the last month in back-to-back conversations with potential customers. Twenty-plus meetings, each one between thirty and sixty minutes. Every conversation led with listening. Some evolved into demos. Some turned into pitches. But the ones that produced the most valuable insights were the ones that stayed in discovery mode the longest.
 
 It has been, without exaggeration, the most valuable month of work since I started building ShipKode.
 
@@ -36,13 +36,13 @@ Hearing a VP of Engineering describe how their team wants to adopt AI-assisted d
 
 There's a principle I keep coming back to: **understand the customer before the customer understands you.**
 
-This is the opposite of what most founders do. The instinct when you've built something is to show it. You've spent months on this thing. You're proud of it. You want validation. So you book a meeting, share your screen, and start clicking through the product.
+The natural instinct when you've built something is to show it. You've spent months on this thing. You're proud of it. You want validation. So you book a meeting, share your screen, and start clicking through the product. I've done this. It works, and there's a time for it.
 
-The moment you show a demo, you've lost the conversation. The customer is now reacting to your solution instead of describing their problem. Their feedback becomes bounded by what you showed them. They'll tell you what they think of your feature, not what keeps them up at night. You've traded the most valuable information you could get, an unfiltered view of their world, for the least valuable: their opinion of your UI.
+But when you lead with a demo, the conversation narrows. The customer is reacting to your solution instead of describing their problem. Their feedback becomes bounded by what you showed them. They'll tell you what they think of your feature, not what keeps them up at night.
 
-Customer discovery reverses this. You go in with questions, not slides. You listen more than you talk. You seek to understand how they work today, what's painful, what they've tried, what they wish existed. You let them describe the problem in their language, using their mental models, with their priorities. Then, after you've truly understood them, you can show them what you've built and see if it lands.
+The best conversations I had this month were the ones where I resisted the demo impulse and started with questions. How does your team work today? What's painful? What have you tried? I let them describe the problem in their language, using their mental models, with their priorities. When I did eventually show the product, later in the conversation, the context I'd gained made the demo dramatically more effective. I knew which parts to focus on because I'd just heard what mattered to them.
 
-The insights you get from this ordering are qualitatively different from demo feedback. Demo feedback tells you whether someone likes what you built. Discovery feedback tells you whether you're building the right thing.
+The ordering matters. Discovery first, then demo. Understand first, then be understood. The insights you get from this sequence are qualitatively different from leading with a pitch. Demo-first feedback tells you whether someone likes what you built. Discovery-first feedback tells you whether you're building the right thing, and sharpens the demo when it comes.
 
 ## Why this is the most important activity for early-stage startups
 
@@ -163,7 +163,7 @@ The traceability chain I described in my [post on AI drift]({% post_url 2026-02-
 
 Having done this wrong before doing it right, here are the failure modes I've seen and made.
 
-**Leading with the demo.** I've covered this, but it bears repeating because the pull is strong. You will want to show your product. Resist. Understand first.
+**Leading with the demo.** I've covered this, but it bears repeating because the pull is strong. Demos are valuable, but they're most effective after you've listened. Lead with discovery, and the demo lands harder because you know what to emphasize.
 
 **Asking leading questions.** "Don't you think AI-assisted development tools should integrate with your specification pipeline?" is not a discovery question. It's a validation question wearing a discovery hat. Ask open-ended questions. "How do your specifications get from the product team to the engineering team?" Let them tell you.
 
