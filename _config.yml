@@ -19,8 +19,8 @@ twitter:
   username: davidlapsleyio
 
 # Theme Settings
-theme: minimal-mistakes-jekyll
-# remote_theme: mmistakes/minimal-mistakes@4.27.3
+# theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes@4.27.3
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Author
