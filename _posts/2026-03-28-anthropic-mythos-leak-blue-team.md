@@ -25,7 +25,7 @@ tags:
 
 Last week, Anthropic accidentally published nearly 3,000 internal documents to a publicly searchable database. A default CMS setting made uploaded files public. No exploit. No sophisticated attacker. Just an unlocked door.
 
-The internet had a field day with the irony. An AI safety company failing basic information security hygiene. But most of the coverage missed the more important story — the one *inside* the leak.
+The internet had a field day with the irony. A company that built its brand on AI safety, failing basic information security hygiene. But most of the coverage missed the more important story — the one *inside* the leak.
 
 Buried in those documents was a draft announcement for Anthropic's next model, codenamed Mythos. In that draft, Anthropic's own team wrote this:
 
