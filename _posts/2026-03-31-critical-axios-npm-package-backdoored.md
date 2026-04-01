@@ -1,3 +1,18 @@
+---
+title: "CRITICAL: Axios npm Package Backdoored — 100M Weekly Downloads, Cross-Platform RAT"
+description: "The axios npm package was compromised with cross-platform RATs. Immediate action required if your codebase pulled axios@1.14.1 or axios@0.30.4."
+date: 2026-03-31
+categories:
+  - Engineering
+  - Cybersecurity
+  - AI Infrastructure
+tags:
+  - supply-chain-attack
+  - npm-security
+  - axios
+  - software-security
+---
+
 ## CRITICAL: Axios npm Package Backdoored — 100M Weekly Downloads, Cross-Platform RAT
 
 **This is not a drill. Assume compromise if you've pulled affected versions. Immediate action required.**

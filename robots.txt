@@ -2,7 +2,9 @@
 User-agent: *
 Allow: /
 
-Disallow: /assets/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Allow: /assets/images/
 Disallow: /page*/
 
 Sitemap: https://blog.davidlapsley.io/sitemap.xml

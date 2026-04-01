@@ -1,5 +1,7 @@
 # Site Settings
-title: "@davidlapsleyio"
+title: "David Lapsley — AI Infrastructure & Engineering Leadership"
+name: "David Lapsley"
+locale: "en-US"
 future: true
 search: true
 
@@ -9,7 +11,7 @@ analytics:
   google:
     tracking_id: "G-1XBDLYDE19"
 email: davidlapsleyio@gmail.com
-description: My personal blog site
+description: "David Lapsley's blog on AI infrastructure, agentic SDLC, distributed systems, and engineering leadership."
 url: https://blog.davidlapsley.io
 baseurl: ""
 og_image: /assets/images/headshot.jpg
@@ -19,8 +21,8 @@ twitter:
   username: davidlapsleyio
 
 # Theme Settings
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes@4.27.3
+theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes@4.27.3
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Author
@@ -71,7 +73,7 @@ defaults:
       read_time: true
       comments: false
       share: true
-      related: false
+      related: true
       toc: true
       toc_label: "Contents"
       toc_icon: "list"
