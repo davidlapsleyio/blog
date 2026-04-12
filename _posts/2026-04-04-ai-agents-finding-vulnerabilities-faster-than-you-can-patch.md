@@ -1,9 +1,18 @@
 ---
 title: "AI Agents Are Finding Vulnerabilities Faster Than You Can Patch Them"
+description: "AI agents are finding 5-10 new Linux kernel vulnerabilities per day. The gap between discovery speed and patch speed is the new risk frontier for every CTO."
 date: 2026-04-04
-layout: post
-author: David Lapsley
-categories: [AI, Security, Vulnerability Research]
+layout: single
+author_profile: true
+read_time: true
+comments: false
+share: true
+related: true
+toc: true
+toc_label: "Contents"
+toc_icon: "list"
+toc_sticky: true
+categories: [AI, Security, Vulnerability-Research]
 ---
 
 The Linux kernel security list used to receive 2-3 bug reports per week. That was two years ago. Last year it was 10 per week. This year it is 5-10 per day.
