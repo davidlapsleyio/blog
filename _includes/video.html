@@ -1,0 +1,30 @@
+{% if include.provider == "youtube" %}
+<div class="fluid-width-video-wrapper" style="padding-top: 56.25%; position: relative;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ include.id }}"
+    frameborder="0"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="YouTube video player">
+  </iframe>
+</div>
+{% elsif include.provider == "vimeo" %}
+<div class="fluid-width-video-wrapper" style="padding-top: 56.25%; position: relative;">
+  <iframe
+    src="https://player.vimeo.com/video/{{ include.id }}"
+    frameborder="0"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    title="Vimeo video player">
+  </iframe>
+</div>
+{% else %}
+<div class="fluid-width-video-wrapper" style="padding-top: 56.25%; position: relative;">
+  <iframe
+    src="{{ include.id }}"
+    frameborder="0"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
+{% endif %}
