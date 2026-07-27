@@ -21,30 +21,45 @@ team from scratch, and later formed the Network Fabric Controllers
 organization, bringing AIDN, Scalable Intent Driven Routing (SIDR),
 and several other control-plane teams together under one roof.
 
+Some scope before anything else, because "the AWS network" is a phrase
+that invites overclaiming. Amazon's networking organization is
+enormous, and it splits across very different problem domains: the
+border, the backbone, the edge, the data center. I worked in the data
+center part of it, specifically on data center fabrics. AIDN and SIDR
+were one set of systems among many operating that vast network, and
+other organizations ran their own control and management systems for
+the parts I never touched. What AIDN and SIDR became, together, was
+the management and control plane for the largest network fabric in
+Amazon's history. Big claim, bounded scope. The bounding matters for
+everything that follows, because the lessons below come from one
+domain, not from the whole network.
+
 Credit where it belongs before I go further. AIDN was the vision of
 Stephen Callaghan, one of our senior Principal Engineers, and SIDR was
 the vision of another, JR Rivers. My job was to build and lead the
 teams that turned their combined vision into production systems
-running one of the largest networks on the planet, and I had
-exceptional engineers to do it with. And to be clear about what
-"leading" meant: I wasn't just running the program. I spent much of
-those three years in the technical work itself, in design reviews,
-architecture debates, and operational deep dives alongside the PEs and
-the teams. That's where most of the lessons below come from.
+operating Amazon's data center fabrics at scale, and I had exceptional
+engineers to do it with. And to be clear about what "leading" meant:
+I wasn't just running the program. I spent much of those three years
+in the technical work itself, in design reviews, architecture debates,
+and operational deep dives alongside the PEs and the teams. That's
+where most of the lessons below come from.
 
 I didn't think of it in these terms at the time, but this is exactly
 what everyone building with AI is trying to do right now: capture
 expert judgment and put it inside a system that can execute it faster,
 more consistently, and at greater scale than the experts themselves.
-The AWS network got there without LLMs. The lessons from that journey
-map almost one-to-one onto the problems AI teams are hitting today.
+The fabric got there without LLMs. The lessons from that journey map
+almost one-to-one onto the problems AI teams are hitting today.
 Most of those teams are earlier in the journey than they think.
 
 ## The bottleneck was never bandwidth. It was judgment.
 
-By 2021, the AWS network had a problem that no amount of hardware
-could fix. The systems used to operate it had grown organically over
-more than a decade. Critical operational knowledge was spread across
+By 2021, data center fabric operations had a problem that no amount of
+hardware could fix. The systems used to run the fabrics had grown
+organically over more than a decade, alongside the separate systems
+other parts of the network relied on, with little shared structure
+between them. Critical operational knowledge was spread across
 multiple systems, none of which was authoritative. The same
 information was duplicated in different places, in different formats,
 with no guarantee the copies agreed. And the whole apparatus was
@@ -56,7 +71,8 @@ off a device, whether a change was safe to push.
 That's why AIDN existed. Stephen had the vision, and I was brought in
 to build the team, greenfield, with a mandate the job postings later
 described accurately: completely re-imagine how one of the largest
-networks on the planet would be operated for the next decade.
+networks on the planet would be operated for the next decade. In
+practice, that meant the fabric layer. Ambitious enough.
 
 But AWS had already tried to automate this judgment once. The way that
 first attempt fell short taught me more than the eventual solution
@@ -64,7 +80,7 @@ did.
 
 ## The YAML era: capturing judgment is not automating it
 
-Before AIDN, network engineering judgment *had* been captured, in
+Before AIDN, fabric engineering judgment *had* been captured, in
 infrastructure-as-code. Routing policy decisions, for example, lived
 in what amounted to a lightweight wrapper around BGP policy, expressed
 as a large collection of YAML files in a git repo.
@@ -76,8 +92,11 @@ maintain. It was hard to test; you couldn't easily answer "what does
 the network do if I merge this?" It was hard to keep well-structured
 and normalized, and the repo accumulated near-duplicates and special
 cases the way all shared config repos do. Every change still required
-an expert to hold the whole system in their head, because the files
-encoded *outputs* of judgment without encoding the judgment itself.
+an expert to hold the whole system in their head. The reason is worth
+stating plainly: those files captured code and configuration, not
+intent. They were the *output* of expert judgment, rendered in a
+machine-applicable format. The judgment itself, the reasoning that
+produced the configuration, never made it into the artifact.
 
 And to be clear, this wasn't a naive setup. There were real safety
 systems wrapped around those repos: CI/CD pipelines, validation
@@ -100,15 +119,27 @@ and update the artifact. We had automated the typing, not the
 thinking. And it was hitting the same wall as manual operations. It
 just hit it a few years later.
 
+None of this is a knock on AWS, and none of it is unique to Amazon.
+Every large infrastructure organization I've worked in or with has a
+version of this repo, and most of them are in far worse shape. AWS
+almost certainly operates networks better than anyone else on the
+planet. That's the point worth sitting with. This ceiling is not a
+symptom of doing infrastructure badly. It is what you hit *after* you
+have done everything else right, and it shows up first at the
+organizations furthest along. If the best network operators in the
+world had to build their way past it, the odds that your prompt repo
+escapes it are not good.
+
 If you're building with LLMs today, you should recognize this era,
-because you're probably living in it. A prompt is a YAML file. It's a
-captured artifact of expert judgment that is hard to test, hard to
-keep normalized, silently accumulating special cases, and still
-dependent on the original expert to maintain. Prompt libraries are the
-config repos of AI. They're a real step forward, and they will hit
-exactly the same wall. So will the CI bolted on beside them, if what
-it checks is the artifact rather than the intent: slow eval suites
-that gate every change, grow brittle as the prompt sprawls, and still
+because you're probably living in it. A prompt is a YAML file. It is
+the rendered output of expert judgment, not the judgment: hard to
+test, hard to keep normalized, silently accumulating special cases,
+and still dependent on the original expert to maintain. Prompt
+libraries are the config repos of AI. They're a real step forward, and
+they will hit exactly the same wall. So will the CI bolted on beside
+them, if what it checks is the artifact rather than the intent: slow
+eval suites that gate every change, grow brittle as the prompt
+sprawls, and still
 let regressions through because they don't encode what the expert
 actually wanted.
 
@@ -190,12 +221,14 @@ free inside them.
 
 ## The org lesson: teams must own the whole loop
 
-In 2023 my boss, our division's senior Principal Engineer, and I made
-a call: AIDN and SIDR were too tightly coupled to live in separate
-organizations, and SIDR was wrestling with hard problems that needed
-concentrated leadership attention. We merged them, along with several
-other software controller teams, into a single group: Network Fabric
-Controllers.
+In 2023 we made a call: AIDN and SIDR were too tightly coupled to live
+in separate organizations, and SIDR was solving hard problems that
+deserved a dedicated leadership focus it couldn't get while the loop
+was split across org boundaries. We merged them, along
+with several other software controller teams, into a single group:
+Network Fabric Controllers. Together, those systems became the
+management and control plane for the largest network fabric in
+Amazon's history.
 
 The technical logic was simple. An intent system that can't control
 routing, and a routing system that doesn't know intent, are each half
@@ -227,7 +260,7 @@ change is everything around it. Most AI systems in production today
 are at the YAML stage: captured judgment, no admission control, no
 journal, no drift detection, open loops everywhere. The teams that
 internalize the rest of the structure first are going to operate their
-AI the way AWS operates its network: declaratively, verifiably, and at
+AI the way AWS operates its fabrics: declaratively, verifiably, and at
 a scale where the experts' judgment outlives the experts'
 availability.
 
@@ -243,10 +276,11 @@ That's the work I'm doing now. The network was just the first fabric.
 ---
 
 > David Lapsley, Ph.D., is Founder and CEO of
-> ShipKodeAI. He has spent 25+ years building infrastructure
-> platforms at scale. Previously Director of Network
-> Fabric Controllers at AWS (largest network fabric in
-> Amazon history) and Director at Cisco (DNA Center
+> ShipKodeAI. Over a 26-year career, he has spent 15
+> years building infrastructure and platform products.
+> Previously Director of Network Fabric Controllers at
+> AWS, the team that powered the largest network fabric
+> in Amazon's history, and Director at Cisco (DNA Center
 > Maglev Platform, $1B run rate). He writes about AI
 > infrastructure, AI-accelerated SDLC, and the gap
 > between POC and production.
